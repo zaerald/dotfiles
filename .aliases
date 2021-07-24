@@ -28,6 +28,6 @@ alias reload="exec ${SHELL} -l"
 alias vim=nvim
 alias k=kubectl
 
-# dotfile setup bare git
+# dotfiles setup bare git
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 

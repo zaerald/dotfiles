@@ -5,7 +5,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -109,61 +108,8 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# Tilix proper pane splitting fix
-if [[ $TILIX_ID ]]; then
-  source /etc/profile.d/vte.sh
-fi
-
-function idea() {
-  nohup intellij-idea-ultimate "$@" &> /dev/null &
-}
-
-# nvm-sh
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-
-# NODE nvm export
-export NODE_PATH=$NODE_PATH:`npm root -g`
-
-# tilix
-if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
-  source /etc/profile.d/vte.sh
-fi
-
-# fc
-export EDITOR=vim
-
-# jenv
-# export JAVA_HOME="$(jenv prefix)"
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
-
-# node
-export PATH=$PATH$NODE_PATH
-
-# golang
-export PATH=$PATH:/usr/local/go/bin
-
-# android tools
-export PATH=$PATH:~/Android/Sdk/platform-tools
-
-# gradle
-export PATH="/usr/local/gradle/bin:$PATH"
-
-# aliases
-source ~/.aliases
+source ~/.zprofile
 

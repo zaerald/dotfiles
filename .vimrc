@@ -4,9 +4,9 @@ set expandtab " convert tabs to spaces
 set shiftround " when shifting lines, round the indentation to the nearest multiple of "shiftwidth."
 set shiftwidth=2 " when shifting, indent using four spaces
 set smarttab " insert “tabstop” number of spaces when the “tab” key is pressed
-set tabstop=2 " indent using four spaces
+set tabstop=2 " indent using two spaces
 
-" -- search options -- 
+" -- search options --
 set hlsearch " enable search highlighting.
 set ignorecase " ignore case when searching.
 set incsearch " incremental search that shows partial matches.
@@ -16,8 +16,8 @@ set smartcase " automatically switch search to case-sensitive when search query 
 set display+=lastline " always try to show a paragraph’s last line
 set encoding=utf-8 " use an encoding that supports unicode
 set linebreak " avoid wrapping a line in the middle of a word
-set scrolloff=5 " the number of screen lines to keep above and below the cursor
-set sidescrolloff=5 " the number of screen columns to keep to the left and right of the cursor
+set scrolloff=3 " the number of screen lines to keep above and below the cursor
+set sidescrolloff=3 " the number of screen columns to keep to the left and right of the cursor
 set wrap " enable line wrapping
 syntax enable: Enable syntax highlighting.
 
@@ -34,6 +34,7 @@ set visualbell " flash the screen instead of beeping on errors
 set mouse=a " enable mouse for scrolling and resizing
 set title " set the window’s title, reflecting the file currently being edited
 set background=dark " use colors that suit a dark background
+set list lcs=tab:▸\ ,lead:·,trail:· " show 'invisible' characters
 
 " -- code folding options --
 set foldmethod=indent " fold based on indention levels.
@@ -50,4 +51,16 @@ set history=1000 " increase the undo limit
 set nomodeline " ignore file’s mode lines; use vimrc configurations instead
 set nrformats-=octal " interpret octal as decimal when incrementing numbers
 set shell " the shell used to execute commands
+set nocompatible " make vim more useful
+set showcmd " show the (partial) command as it’s being typed 
+
+" -- automatic commands --
+if has("autocmd")
+  " Enable file type detection
+  filetype on
+  " Treat .json files as .js
+  autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
+  " Treat .md files as Markdown
+  autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
+endif
 

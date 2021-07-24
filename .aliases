@@ -1,0 +1,33 @@
+# navigation
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias -- -="cd -"
+
+# shortcuts
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+alias w="cd ~/workspace"
+
+# always enable colored `grep` output
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+# enable aliases to be sudo’ed
+alias sudo='sudo '
+
+# get week number
+alias week='date +%V'
+
+# Reload the shell (i.e. invoke as a login shell)
+alias reload="exec ${SHELL} -l"
+
+# others
+alias vim=nvim
+alias k=kubectl
+
+# dotfile setup bare git
+alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+

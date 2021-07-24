@@ -164,6 +164,6 @@ export PATH=$PATH:~/Android/Sdk/platform-tools
 # gradle
 export PATH="/usr/local/gradle/bin:$PATH"
 
-# bash aliases
-source ~/.bash_aliases
+# aliases
+source ~/.aliases
 

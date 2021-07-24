@@ -1,0 +1,53 @@
+" -- indention options --
+set autoindent " new lines inherit the indentation of previous lines
+set expandtab " convert tabs to spaces
+set shiftround " when shifting lines, round the indentation to the nearest multiple of "shiftwidth."
+set shiftwidth=2 " when shifting, indent using four spaces
+set smarttab " insert “tabstop” number of spaces when the “tab” key is pressed
+set tabstop=2 " indent using four spaces
+
+" -- search options -- 
+set hlsearch " enable search highlighting.
+set ignorecase " ignore case when searching.
+set incsearch " incremental search that shows partial matches.
+set smartcase " automatically switch search to case-sensitive when search query contains an uppercase letter
+
+" -- text rendering options --
+set display+=lastline " always try to show a paragraph’s last line
+set encoding=utf-8 " use an encoding that supports unicode
+set linebreak " avoid wrapping a line in the middle of a word
+set scrolloff=5 " the number of screen lines to keep above and below the cursor
+set sidescrolloff=5 " the number of screen columns to keep to the left and right of the cursor
+set wrap " enable line wrapping
+syntax enable: Enable syntax highlighting.
+
+" -- user interface options --
+set laststatus=2 " always display the status bar
+set ruler " always show cursor position
+set wildmenu " display command line’s tab complete options as a menu
+set tabpagemax=50 " maximum number of tab pages that can be opened from the command line
+set cursorline " highlight the line currently under cursor
+set number " show line numbers on the sidebar
+set relativenumber " show line number on the current line and relative numbers on all other lines
+set noerrorbells " disable beep on errors
+set visualbell " flash the screen instead of beeping on errors
+set mouse=a " enable mouse for scrolling and resizing
+set title " set the window’s title, reflecting the file currently being edited
+set background=dark " use colors that suit a dark background
+
+" -- code folding options --
+set foldmethod=indent " fold based on indention levels.
+set foldnestmax=3 " only fold up to three nested levels
+set nofoldenable " disable folding by default
+
+" -- misc --
+set autoread " automatically re-read files if unmodified inside Vim
+set backspace=indent,eol,start " allow backspacing over indention, line breaks and insertion start
+set dir=~/.cache/vim " directory to store swap files
+set formatoptions+=j " delete comment characters when joining lines
+set hidden " hide files in the background instead of closing them
+set history=1000 " increase the undo limit
+set nomodeline " ignore file’s mode lines; use vimrc configurations instead
+set nrformats-=octal " interpret octal as decimal when incrementing numbers
+set shell " the shell used to execute commands
+

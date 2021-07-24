@@ -1,0 +1,30 @@
+# This is Git's per-user configuration file.
+[user]
+	name = zaerald
+	email = zaerald.zd@gmail.com
+[core]
+	editor = vim
+
+[alias]
+	a = add
+	aa = add .
+	cm = commit -m
+	st = status
+	dino = diff --name-only
+	co = checkout
+	cb = checkout -b
+	br = branch
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	lo = log --oneline
+	ca = commit --amend
+	can = commit --amend --no-edit
+	pf = push -f
+	p = push
+	pfl = push --force-with-lease
+	rlc = rev-list --count
+
+[pull]
+	ff = only
+[init]
+	defaultBranch = main
+

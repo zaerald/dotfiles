@@ -85,6 +85,7 @@ plugins=(
   npm
   docker
   docker-compose
+  vi-mode
   zsh-autosuggestions
   zsh-syntax-highlighting
 )

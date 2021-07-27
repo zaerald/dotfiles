@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# make vim the default editor.
+export EDITOR='vim';
+
+# jenv
+# export JAVA_HOME="$(jenv prefix)"
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+
+# node
+export PATH=$PATH$NODE_PATH
+
+# golang
+export PATH=$PATH:/usr/local/go/bin
+
+# android tools
+export PATH=$PATH:~/Android/Sdk/platform-tools
+
+# gradle
+export PATH="/usr/local/gradle/bin:$PATH"
+

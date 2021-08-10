@@ -1,34 +1,36 @@
-# This is Git's per-user configuration file.
 [user]
-	name = zaerald
-	email = zaerald.zd@gmail.com
+  name = zaerald
+  email = zaerald.zd@gmail.com
+
 [core]
-	editor = vim
+  editor = vim
 
 [alias]
-	a = add
-	aa = add .
-	cm = commit -m
-	s = status -s
-	st = status
-	dino = diff --name-only
-	co = checkout
-	cb = checkout -b
-	br = branch
-	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  a = add
+  aa = add .
+  cm = commit -m
+  s = status -s
+  st = status
+  dino = diff --name-only
+  co = checkout
+  cb = checkout -b
+  br = branch
+  brn = branch --show-current
+  brb = branch --show-branch
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
   l = log --pretty=oneline -n 20 --graph --abbrev-commit
-	lo = log --oneline
-	ca = commit --amend
-	can = commit --amend --no-edit
-	pf = push -f
-	p = push
-	pfl = push --force-with-lease
-	rlc = rev-list --count $1..HEAD
+  lo = log --oneline
+  ca = commit --amend
+  can = commit --amend --no-edit
+  pf = push -f
+  p = push
+  pfl = push --force-with-lease
+  rlc = rev-list --count $1..HEAD
   t = tag
   ts = tag -l
   sq = "!f() { git reset HEAD~$1; }; f"
   sqb = "!f() { git reset HEAD~$(git rev-list --count $1..HEAD); }; f"
-	count = "!f() { git rev-list --count $1..HEAD; }; f"
+  count = "!f() { git rev-list --count $1..HEAD; }; f"
   contributors = shortlog --summary --numbered
   whoami = config user.email
 
@@ -36,7 +38,8 @@
   aliases = config --get-regexp alias
 
 [pull]
-	ff = only
+  ff = only
+
 [init]
-	defaultBranch = main
+  defaultBranch = main
 

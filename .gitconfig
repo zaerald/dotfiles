@@ -25,7 +25,7 @@
   pf = push -f
   p = push
   pfl = push --force-with-lease
-  rlc = rev-list --count $1..HEAD
+  rlc = "!f() { git rev-list --count $1..HEAD; }; f"
   t = tag
   ts = tag -l
   sq = "!f() { git reset HEAD~$1; }; f"

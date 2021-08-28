@@ -53,6 +53,7 @@ set nrformats-=octal " interpret octal as decimal when incrementing numbers
 set shell " the shell used to execute commands
 set nocompatible " make vim more useful
 set showcmd " show the (partial) command as it’s being typed 
+let mapleader="," " change leader key to comma
 
 " -- automatic commands --
 if has("autocmd")

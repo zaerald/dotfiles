@@ -8,7 +8,7 @@ alias -- -="cd -"
 # shortcuts
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias w="cd ~/workspace"
+alias dw="cd ~/workspace"
 
 # always enable colored `grep` output
 alias grep='grep --color=auto'
@@ -23,6 +23,10 @@ alias week='date +%V'
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec ${SHELL} -l"
+
+# xclip
+alias copy="xclip -selection clipboard"
+alias paste="xclip -o -selection clipboard"
 
 # others
 alias vim=nvim

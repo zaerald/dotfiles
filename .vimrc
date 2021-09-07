@@ -54,6 +54,8 @@ set shell " the shell used to execute commands
 set nocompatible " make vim more useful
 set showcmd " show the (partial) command as it’s being typed 
 let mapleader="," " change leader key to comma
+" allow saving of files as sudo
+cmap w!! w !sudo tee > /dev/null %
 
 " -- automatic commands --
 if has("autocmd")

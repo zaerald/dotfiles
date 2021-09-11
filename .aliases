@@ -9,6 +9,10 @@ alias -- -="cd -"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias dw="cd ~/workspace"
+alias dwo="cd ~/workspace/others"
+alias dwg="cd ~/workspace"
+alias dwgh="cd ~/workspace/github.com"
+alias dwgl="cd ~/workspace/gitlab.com"
 
 # always enable colored `grep` output
 alias grep='grep --color=auto'
@@ -30,6 +34,7 @@ alias paste="xclip -o -selection clipboard"
 
 # others
 alias vim=nvim
+alias v=vim
 alias k=kubectl
 
 # dotfiles setup bare git

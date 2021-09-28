@@ -7,8 +7,8 @@ Clone to your home directory.
 ### Update `git` configuration
 
 ```
-git config user.name <name>
-git config user.email <email>
+git config --global user.name <name>
+git config --global user.email <email>
 ```
 
 ## Usage

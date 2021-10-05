@@ -1,3 +1,6 @@
+
+let mapleader="," " change leader key to comma
+
 " -- search options
 set ignorecase " ignore case when searching.
 set incsearch " incremental search that shows partial matches.
@@ -12,3 +15,11 @@ set number " show line numbers on the sidebar.
 set relativenumber " show line number on the current line and relative numbers on all other lines.
 
 set ideajoin
+
+" -- custom --
+nnoremap <leader>L Lzt
+nnoremap <leader>H Hzb
+
+" insert lines without insert mode
+nnoremap o o<Esc>
+nnoremap O O<Esc>

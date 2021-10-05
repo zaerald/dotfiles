@@ -1,7 +1,10 @@
 # open intellij
-function idea() {
-  nohup intellij-idea-ultimate "$@" &> /dev/null &
-}
+os=$(uname -s)
+if [[ $os != *'Darwin'* ]]; then
+  function idea() {
+    nohup intellij-idea-ultimate "$@" &> /dev/null &
+  }
+fi
 
 # create a new directory and enter it
 function mkd() {

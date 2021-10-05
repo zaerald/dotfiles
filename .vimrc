@@ -1,3 +1,6 @@
+set encoding=utf-8 " use an encoding that supports unicode
+scriptencoding utf-8 " update script encoding
+
 " -- indention options --
 set autoindent " new lines inherit the indentation of previous lines
 set expandtab " convert tabs to spaces
@@ -11,14 +14,15 @@ set hlsearch " enable search highlighting.
 set ignorecase " ignore case when searching.
 set incsearch " incremental search that shows partial matches.
 set smartcase " automatically switch search to case-sensitive when search query contains an uppercase letter
+set showmatch " show matching brackets
 
 " -- text rendering options --
 set display+=lastline " always try to show a paragraph’s last line
-set encoding=utf-8 " use an encoding that supports unicode
 set linebreak " avoid wrapping a line in the middle of a word
 set scrolloff=3 " the number of screen lines to keep above and below the cursor
 set sidescrolloff=3 " the number of screen columns to keep to the left and right of the cursor
 set wrap " enable line wrapping
+set showbreak=▹ " line break
 syntax enable: Enable syntax highlighting.
 
 " -- user interface options --
@@ -44,13 +48,11 @@ set nofoldenable " disable folding by default
 " -- misc --
 set autoread " automatically re-read files if unmodified inside Vim
 set backspace=indent,eol,start " allow backspacing over indention, line breaks and insertion start
-set dir=~/.cache/vim " directory to store swap files
 set formatoptions+=j " delete comment characters when joining lines
 set hidden " hide files in the background instead of closing them
 set history=1000 " increase the undo limit
 set nomodeline " ignore file’s mode lines; use vimrc configurations instead
 set nrformats-=octal " interpret octal as decimal when incrementing numbers
-set shell " the shell used to execute commands
 set nocompatible " make vim more useful
 set showcmd " show the (partial) command as it’s being typed 
 let mapleader="," " change leader key to comma
@@ -66,4 +68,15 @@ if has("autocmd")
   " Treat .md files as Markdown
   autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
 endif
+
+" -- custom --
+nnoremap <leader>L Lzt
+nnoremap <leader>H Hzb
+
+" insert lines without insert mode
+nnoremap o o<Esc>
+nnoremap O O<Esc>
+
+" sort the buffer removing duplicates
+nmap <Leader>s :%!sort -u --version-sort<CR>
 

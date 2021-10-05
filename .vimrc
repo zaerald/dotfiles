@@ -24,6 +24,8 @@ set sidescrolloff=3 " the number of screen columns to keep to the left and right
 set wrap " enable line wrapping
 set showbreak=▹ " line break
 syntax enable: Enable syntax highlighting.
+" show 'invisible' characters
+set list lcs=tab:▸\ ,trail:·,extends:»,precedes:«,nbsp:⣿
 
 " -- user interface options --
 set laststatus=2 " always display the status bar
@@ -38,7 +40,8 @@ set visualbell " flash the screen instead of beeping on errors
 set mouse=a " enable mouse for scrolling and resizing
 set title " set the window’s title, reflecting the file currently being edited
 set background=dark " use colors that suit a dark background
-set list lcs=tab:▸\ ,lead:·,trail:· " show 'invisible' characters
+set showmode " mode message on last line
+set showcmd " show command in the last line of the screen
 
 " -- code folding options --
 set foldmethod=indent " fold based on indention levels.

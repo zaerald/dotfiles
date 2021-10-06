@@ -48,7 +48,7 @@ alias desktopshow="defaults write com.apple.finder CreateDesktop -bool true && k
 alias nv=nvim
 alias v=vim
 alias k=kubectl
-alias rr=ranger
+alias rr='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
 alias dk=docker
 
 # dotfiles setup bare git

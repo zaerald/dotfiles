@@ -1,9 +1,6 @@
 # dotfiles
 
 ## Setup
-
-Clone to your home directory.
-## Setup
 ```
 git clone --bare $DOTFILES_REPO_URL $HOME/dotfiles
 alias dtf='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'

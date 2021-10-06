@@ -21,7 +21,7 @@ set display+=lastline " always try to show a paragraph’s last line
 set linebreak " avoid wrapping a line in the middle of a word
 set scrolloff=3 " the number of screen lines to keep above and below the cursor
 set sidescrolloff=3 " the number of screen columns to keep to the left and right of the cursor
-set wrap " enable line wrapping
+set nowrap " disable line wrapping
 set showbreak=▹ " line break
 syntax enable: Enable syntax highlighting.
 " show 'invisible' characters
@@ -39,7 +39,6 @@ set noerrorbells " disable beep on errors
 set visualbell " flash the screen instead of beeping on errors
 set mouse=a " enable mouse for scrolling and resizing
 set title " set the window’s title, reflecting the file currently being edited
-set background=dark " use colors that suit a dark background
 set showmode " mode message on last line
 set showcmd " show command in the last line of the screen
 
@@ -58,7 +57,11 @@ set nomodeline " ignore file’s mode lines; use vimrc configurations instead
 set nrformats-=octal " interpret octal as decimal when incrementing numbers
 set nocompatible " make vim more useful
 set showcmd " show the (partial) command as it’s being typed 
-let mapleader="," " change leader key to comma
+set nobackup " don't keep a backup file
+set noswapfile " don't keep a swap file
+set undodir=~/.vim/undodir
+set undofile " undo file for each file opened
+let mapleader=" " " change leader key to comma
 " allow saving of files as sudo
 cmap w!! w !sudo tee > /dev/null %
 
@@ -72,9 +75,23 @@ if has("autocmd")
   autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
 endif
 
-" -- custom --
+" -- custom mappings --
 nnoremap <leader>L Lzt
 nnoremap <leader>H Hzb
+nnoremap <leader>q :q!
+
+nnoremap <leader>h :wincmd h<CR>
+nnoremap <leader>j :wincmd j<CR>
+nnoremap <leader>k :wincmd k<CR>
+nnoremap <leader>l :wincmd l<CR>
+nnoremap <leader>u :UndotreeShow<CR>
+nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 30<CR>
+nnoremap <leader>ps :Rg<SPACE>
+nnoremap <silent> <Leader>+ :vertical resize +5<CR>
+nnoremap <silent> <Leader>- :vertical resize -5<CR>
+
+nnoremap <silent> <Leader>gd :YcmCompleter GoTo<CR>
+nnoremap <silent> <Leader>gf :YcmCompleter FixIt<CR>
 
 " insert lines without insert mode
 nnoremap o o<Esc>
@@ -82,4 +99,36 @@ nnoremap O O<Esc>
 
 " sort the buffer removing duplicates
 nmap <Leader>s :%!sort -u --version-sort<CR>
+
+" -- plugins --
+" initialize vim-plug
+call plug#begin('~/.vim/plugged')
+
+Plug 'morhetz/gruvbox'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'leafgarland/typescript-vim'
+Plug 'vim-utils/vim-man'
+Plug 'git@github.com:kien/ctrlp.vim.git'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'mbbill/undotree'
+
+call plug#end()
+
+" -- colorschemes --
+colorscheme gruvbox
+set background=dark " use colors that suit a dark background
+"set colorcolumn=80
+"highlight ColorColumn ctermbg=0 guibg=lightrey
+
+if executable('rg')
+  let g:rg_derive_root='true'
+endif
+
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+let g:netrw_browse_split=2
+let g:netrw_banner=0
+let g:netrw_winsize=25
+let g:ctrlp_use_caching=0
 

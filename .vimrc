@@ -8,6 +8,8 @@ set shiftround " when shifting lines, round the indentation to the nearest multi
 set shiftwidth=2 " when shifting, indent using four spaces
 set smarttab " insert “tabstop” number of spaces when the “tab” key is pressed
 set tabstop=2 " indent using two spaces
+set softtabstop=2
+set smartindent
 
 " -- search options --
 set hlsearch " enable search highlighting.
@@ -19,7 +21,7 @@ set showmatch " show matching brackets
 " -- text rendering options --
 set display+=lastline " always try to show a paragraph’s last line
 set linebreak " avoid wrapping a line in the middle of a word
-set scrolloff=3 " the number of screen lines to keep above and below the cursor
+set scrolloff=5 " the number of screen lines to keep above and below the cursor
 set sidescrolloff=3 " the number of screen columns to keep to the left and right of the cursor
 set nowrap " disable line wrapping
 set showbreak=▹ " line break
@@ -41,6 +43,7 @@ set mouse=a " enable mouse for scrolling and resizing
 set title " set the window’s title, reflecting the file currently being edited
 set showmode " mode message on last line
 set showcmd " show command in the last line of the screen
+set signcolumn=yes
 
 " -- code folding options --
 set foldmethod=indent " fold based on indention levels.
@@ -51,6 +54,7 @@ set nofoldenable " disable folding by default
 set autoread " automatically re-read files if unmodified inside Vim
 set backspace=indent,eol,start " allow backspacing over indention, line breaks and insertion start
 set formatoptions+=j " delete comment characters when joining lines
+set nohlsearch " don't highlight after search
 set hidden " hide files in the background instead of closing them
 set history=1000 " increase the undo limit
 set nomodeline " ignore file’s mode lines; use vimrc configurations instead
@@ -61,6 +65,8 @@ set nobackup " don't keep a backup file
 set noswapfile " don't keep a swap file
 set undodir=~/.vim/undodir
 set undofile " undo file for each file opened
+set exrc " read config if present in directory
+set guicursor= " maintain block cursor type
 let mapleader=" " " change leader key to comma
 " allow saving of files as sudo
 cmap w!! w !sudo tee > /dev/null %
@@ -74,6 +80,36 @@ if has("autocmd")
   " Treat .md files as Markdown
   autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
 endif
+
+" -- plugins --
+" initialize vim-plug
+call plug#begin('~/.vim/plugged')
+
+Plug 'gruvbox-community/gruvbox'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'leafgarland/typescript-vim'
+Plug 'vim-utils/vim-man'
+Plug 'git@github.com:kien/ctrlp.vim.git'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'mbbill/undotree'
+
+call plug#end()
+
+" -- colorschemes --
+colorscheme gruvbox
+set background=dark " use colors that suit a dark background
+
+if executable('rg')
+  let g:rg_derive_root='true'
+endif
+
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+let g:netrw_browse_split=2
+let g:netrw_banner=0
+let g:netrw_winsize=25
+let g:ctrlp_use_caching=0
 
 " -- custom mappings --
 nnoremap <leader>L Lzt
@@ -99,36 +135,4 @@ nnoremap O O<Esc>
 
 " sort the buffer removing duplicates
 nmap <Leader>s :%!sort -u --version-sort<CR>
-
-" -- plugins --
-" initialize vim-plug
-call plug#begin('~/.vim/plugged')
-
-Plug 'morhetz/gruvbox'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-Plug 'tpope/vim-fugitive'
-Plug 'leafgarland/typescript-vim'
-Plug 'vim-utils/vim-man'
-Plug 'git@github.com:kien/ctrlp.vim.git'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'mbbill/undotree'
-
-call plug#end()
-
-" -- colorschemes --
-colorscheme gruvbox
-set background=dark " use colors that suit a dark background
-"set colorcolumn=80
-"highlight ColorColumn ctermbg=0 guibg=lightrey
-
-if executable('rg')
-  let g:rg_derive_root='true'
-endif
-
-let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
-let g:netrw_browse_split=2
-let g:netrw_banner=0
-let g:netrw_winsize=25
-let g:ctrlp_use_caching=0
 

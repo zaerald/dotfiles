@@ -26,6 +26,7 @@
   p = push
   pfl = push --force-with-lease
   pu = push -u origin HEAD
+  rhh = reset --hard HEAD
   rlc = "!f() { git rev-list --count $1..HEAD; }; f"
   t = tag
   ts = tag -l

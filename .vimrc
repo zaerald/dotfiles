@@ -4,12 +4,12 @@ scriptencoding utf-8 " update script encoding
 " -- indention options --
 set autoindent " new lines inherit the indentation of previous lines
 set expandtab " convert tabs to spaces
-set shiftround " when shifting lines, round the indentation to the nearest multiple of "shiftwidth."
 set shiftwidth=2 " when shifting, indent using four spaces
 set smarttab " insert “tabstop” number of spaces when the “tab” key is pressed
+set smartindent
+set shiftround " when shifting lines, round the indentation to the nearest multiple of "shiftwidth."
 set tabstop=2 " indent using two spaces
 set softtabstop=2
-set smartindent
 
 " -- search options --
 set hlsearch " enable search highlighting.
@@ -84,6 +84,9 @@ if has("autocmd")
   autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
   " Treat .md files as Markdown
   autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
+
+  autocmd BufNewFile,BufRead *.{js,jsx,ts,tsx} :syntax sync fromstart
+  autocmd BufNewFile,BufRead *.{js,jsx,ts,tsx} :syntax sync clear
 endif
 
 " -- plugins --
@@ -103,7 +106,11 @@ Plug 'git@github.com:kien/ctrlp.vim.git'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'mbbill/undotree'
 Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'sbdchd/neoformat'
+Plug 'ryanoasis/vim-devicons'
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'npm install',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
 
 call plug#end()
 
@@ -116,21 +123,33 @@ if executable('rg')
   let g:rg_derive_root='true'
 endif
 
-autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
-autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
-
-let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
-let g:netrw_browse_split = 0
-let g:netrw_banner = 0
-let g:netrw_winsize = 25
+let g:ctrlp_user_command=['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+let g:netrw_browse_split=0
+let g:netrw_banner=0
+let g:netrw_winsize=25
 let g:netrw_localrmdir='rm -r'
 
 " open files from netrw in a previous window, unless we're opening the current dir
 if argv(0) ==# '.'
-    let g:netrw_browse_split = 0
+  let g:netrw_browse_split=0
 else
-    let g:netrw_browse_split = 4
+  let g:netrw_browse_split=4
 endif
+
+" coc - autocompletion
+" use <tab> for trigger completion and navigate to the next complete item
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~ '\s'
+endfunction
+
+inoremap <silent><expr> <Tab>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<Tab>" :
+      \ coc#refresh()
+" use <c-space>for trigger completion
+inoremap <silent><expr> <c-space> coc#refresh()
+
 
 " -- custom mappings --
 nnoremap <leader>q :q!
@@ -138,7 +157,6 @@ nnoremap <leader>p "+p
 nnoremap <leader>y "+y
 vnoremap <leader>y "+y
 nnoremap <leader>Y gg"+yG
-
 
 nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>j :wincmd j<CR>
@@ -150,9 +168,14 @@ nnoremap <leader>ps :Rg<SPACE>
 nnoremap <silent> <Leader>+ :vertical resize +5<CR>
 nnoremap <silent> <Leader>- :vertical resize -5<CR>
 
+nmap <Leader>py <Plug>(Prettier)
+
 " insert lines without insert mode
 nnoremap o o<Esc>
 nnoremap O O<Esc>
+
+" close all buffers except current
+nnoremap <silent> <leader>bo :w <bar> %bd <bar> e# <bar> bd# <CR><CR>
 
 " sort the buffer removing duplicates
 nmap <Leader>s :%!sort -u --version-sort<CR>

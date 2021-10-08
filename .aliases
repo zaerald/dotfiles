@@ -17,7 +17,7 @@ alias sudo='sudo '
 alias week='date +%V'
 
 # Reload the shell (i.e. invoke as a login shell)
-alias reload="exec ${SHELL} -l"
+alias rl="exec ${SHELL} -l"
 
 # xclip
 alias copy="xclip -selection clipboard"

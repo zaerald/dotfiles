@@ -37,7 +37,6 @@ set cursorline " highlight the line currently under cursor
 set number " show line numbers on the sidebar
 set relativenumber " show line number on the current line and relative numbers on all other lines
 set noerrorbells " disable beep on errors
-set visualbell " flash the screen instead of beeping on errors
 set mouse=a " enable mouse for scrolling and resizing
 set title " set the window’s title, reflecting the file currently being edited
 set showmode " mode message on last line
@@ -94,8 +93,6 @@ endif
 call plug#begin('~/.vim/plugged')
 
 Plug 'gruvbox-community/gruvbox'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
@@ -111,6 +108,18 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'npm install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
+Plug 'junegunn/goyo.vim'
+
+if has('nvim')
+  Plug 'nvim-lua/plenary.nvim'
+  Plug 'nvim-telescope/telescope.nvim'
+endif
+
+if has('nvim') || has('patch-8.0.902')
+  Plug 'mhinz/vim-signify'
+else
+  Plug 'mhinz/vim-signify', { 'branch': 'legacy' }
+endif
 
 call plug#end()
 

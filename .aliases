@@ -45,8 +45,9 @@ alias desktophide="defaults write com.apple.finder CreateDesktop -bool false && 
 alias desktopshow="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
 
 # others
-alias nv=nvim
-alias v=vim
+alias v=nvim
+alias vim=nvim
+alias vi=vim
 alias k=kubectl
 alias rr='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
 alias dk=docker

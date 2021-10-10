@@ -70,6 +70,7 @@ set undodir=~/.vim/undodir
 set undofile " undo file for each file opened
 set exrc " read config if present in directory
 set guicursor= " maintain block cursor type
+set clipboard+=unnamedplus
 set shortmess+=c
 let mapleader=" " " change leader key
 " allow saving of files as sudo
@@ -162,9 +163,6 @@ inoremap <silent><expr> <c-space> coc#refresh()
 
 " -- custom mappings --
 nnoremap <leader>q :q!
-nnoremap <leader>p "+p
-nnoremap <leader>y "+y
-vnoremap <leader>y "+y
 nnoremap <leader>Y gg"+yG
 
 nnoremap <leader>h :wincmd h<CR>

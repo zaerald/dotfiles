@@ -22,3 +22,9 @@ dtf commit -m "message"
 dtf push
 ```
 
+## Brew
+```
+brew bundle dump --describe --global
+brew bundle install --global
+```
+

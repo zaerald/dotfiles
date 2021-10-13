@@ -163,7 +163,9 @@ inoremap <silent><expr> <c-space> coc#refresh()
 
 " -- custom mappings --
 nnoremap <leader>q :q!
+nnoremap <leader>w :w<CR>
 nnoremap <leader>Y gg"+yG
+nnoremap <C-c> <Esc>
 
 nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>j :wincmd j<CR>

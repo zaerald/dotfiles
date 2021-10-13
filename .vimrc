@@ -126,6 +126,7 @@ call plug#end()
 
 " -- colorschemes --
 colorscheme gruvbox
+let g:airline_theme='gruvbox'
 set background=dark " use colors that suit a dark background
 highlight Normal guibg=NONE ctermbg=NONE
 

@@ -26,7 +26,7 @@ alias paste="xclip -o -selection clipboard"
 # tmux
 alias t=tmux
 alias tl='tmux ls'
-alias ts='tmux new -s'
+alias tn='tmux new -s'
 alias ta='tmux attach -t'
 alias tk='tmux kill-session -t'
 alias tks='tmux kill-server'

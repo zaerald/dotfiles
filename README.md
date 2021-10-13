@@ -28,3 +28,9 @@ brew bundle dump --describe --global
 brew bundle install --global
 ```
 
+## Vim
+```
+:PluginInstall
+:PluginUpdate
+```
+

@@ -1,5 +1,5 @@
 
-let mapleader="," " change leader key to comma
+let mapleader=" "
 
 " -- search options
 set ignorecase " ignore case when searching.
@@ -7,19 +7,66 @@ set incsearch " incremental search that shows partial matches.
 set smartcase " automatically switch search to case-sensitive when search query contains an uppercase letter
 
 " --text rendering --
-set scrolloff=3 " the number of screen lines to keep above and below the cursor
-set sidescrolloff=3 " the number of screen columns to keep to the left and right of the cursor.
+set scrolloff=8 " the number of screen lines to keep above and below the cursor
+set sidescrolloff=8 " the number of screen columns to keep to the left and right of the cursor.
 
 " -- user interface --
 set number " show line numbers on the sidebar.
 set relativenumber " show line number on the current line and relative numbers on all other lines.
+set visualbell " non functional visual bell"
+set noerrorbells " disable beep on errors
+set laststatus=2 " always display the status bar
 
-set ideajoin
+set noerrorbells " disable beep on errors
+set clipboard+=unnamedplus
+set clipboard+=ideaput
 
-" -- custom --
-nnoremap <leader>L Lzt
-nnoremap <leader>H Hzb
+" -- custom mappings --
+nnoremap <leader>q :q!
+nnoremap <leader>w :w<CR>
+nnoremap <leader>Y gg"+yG
+nnoremap <C-c> <Esc>
+
+" windows
+nnoremap <leader>h :wincmd h<CR>
+nnoremap <leader>j :wincmd j<CR>
+nnoremap <leader>k :wincmd k<CR>
+nnoremap <leader>l :wincmd l<CR>
 
 " insert lines without insert mode
 nnoremap o o<Esc>
 nnoremap O O<Esc>
+
+" -- intellij config only
+set ideajoin
+set idearefactormode=keep
+
+" -- intellij mappings
+nnoremap <leader>si :source ~/.ideavimrc<CR>
+
+" see :actionlist
+map <C-z> <Action>(ToggleDistractionFreeMode)
+map <c-x> <Action>(HideAllWindows)
+map ,r <Action>(Run)
+map ,d <Action>(Debug)
+map ,g <Action>(ContextDebug)
+map ,b <Action>(ToggleLineBreakpoint)
+map ,n <Action>(ActivateDebugToolWindow)
+
+map ,a <Action>(GotoAction)
+map ,e <Action>(SearchEverywhere)
+map ,c <Action>(GotoClass)
+map ,f <Action>(GotoFile)
+map ,s <Action>(GotoSymbol)
+map ,t <Action>(ActivateTerminalToolWindow)
+map <leader>t <Action>(Terminal.OpenInTerminal)
+
+map ge <Action>(GotoNextError)
+map gE <Action>(GotoPreviousError)
+map gc <Action>(GotoClass)
+map gi <Action>(GotoImap)
+map gd <Action>(GotToDeclaration)
+map gp <Action>(GotToSuperMethod)
+map gt <Action>(GotoTest)
+map gb <Action>(Back)
+map gf <Action>(Forward)

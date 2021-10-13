@@ -1,5 +1,7 @@
-set encoding=utf-8 " use an encoding that supports unicode
-scriptencoding utf-8 " update script encoding
+set encoding=utf-8
+scriptencoding utf-8
+" change leader key
+let mapleader=" "
 
 " -- indention options --
 set autoindent " new lines inherit the indentation of previous lines
@@ -13,10 +15,10 @@ set softtabstop=2
 
 " -- search options --
 set hlsearch " enable search highlighting.
-set ignorecase " ignore case when searching.
 set incsearch " incremental search that shows partial matches.
 set smartcase " automatically switch search to case-sensitive when search query contains an uppercase letter
 set showmatch " show matching brackets
+set ignorecase
 
 " -- text rendering options --
 set display+=lastline " always try to show a paragraph’s last line
@@ -24,9 +26,10 @@ set linebreak " avoid wrapping a line in the middle of a word
 set scrolloff=8 " the number of screen lines to keep above and below the cursor
 set sidescrolloff=3 " the number of screen columns to keep to the left and right of the cursor
 set nowrap " disable line wrapping
-set showbreak=▹ " line break
-syntax enable: Enable syntax highlighting.
-" show 'invisible' characters
+set showbreak=▹ " line break character
+" enable syntax highlighting.
+syntax enable
+" show whitespace characters
 set list lcs=tab:▸\ ,trail:·,extends:»,precedes:«,nbsp:⣿
 
 " -- user interface options --
@@ -72,17 +75,16 @@ set exrc " read config if present in directory
 set guicursor= " maintain block cursor type
 set clipboard+=unnamedplus
 set shortmess+=c
-let mapleader=" " " change leader key
 " allow saving of files as sudo
 cmap w!! w !sudo tee > /dev/null %
 
 " -- automatic commands --
 if has("autocmd")
-  " Enable file type detection
+  " enable file type detection
   filetype on
-  " Treat .json files as .js
+  " treat .json files as .js
   autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
-  " Treat .md files as Markdown
+  " treat .md files as Markdown
   autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
 
   autocmd BufNewFile,BufRead *.{js,jsx,ts,tsx} :syntax sync fromstart
@@ -127,7 +129,7 @@ call plug#end()
 " -- colorschemes --
 colorscheme gruvbox
 let g:airline_theme='gruvbox'
-set background=dark " use colors that suit a dark background
+set background=dark
 highlight Normal guibg=NONE ctermbg=NONE
 
 if executable('rg')
@@ -186,7 +188,4 @@ nnoremap O O<Esc>
 
 " close all buffers except current
 nnoremap <silent> <leader>bo :w <bar> %bd <bar> e# <bar> bd# <CR><CR>
-
-" sort the buffer removing duplicates
-nmap <Leader>s :%!sort -u --version-sort<CR>
 

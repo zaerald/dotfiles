@@ -24,7 +24,8 @@ set ignorecase
 set display+=lastline " always try to show a paragraph’s last line
 set linebreak " avoid wrapping a line in the middle of a word
 set scrolloff=8 " the number of screen lines to keep above and below the cursor
-set sidescrolloff=3 " the number of screen columns to keep to the left and right of the cursor
+set sidescroll=8
+set sidescrolloff=8 " the number of screen columns to keep to the left and right of the cursor
 set nowrap " disable line wrapping
 set showbreak=▹ " line break character
 " enable syntax highlighting.

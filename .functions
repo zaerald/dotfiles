@@ -1,6 +1,5 @@
 # open intellij
-os=$(uname -s)
-if [[ $os != *'Darwin'* ]]; then
+if [[ $OSTYPE != *'darwin'* ]]; then
   function idea() {
     nohup intellij-idea-ultimate "$@" &> /dev/null &
   }

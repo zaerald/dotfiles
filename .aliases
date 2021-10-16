@@ -1,9 +1,4 @@
-# navigation
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
-alias -- -="cd -"
+#!/bin/bash
 
 # always enable colored `grep` output
 alias grep='grep --color=auto'
@@ -20,16 +15,20 @@ alias week='date +%V'
 alias rl="exec ${SHELL} -l"
 
 # xclip
-alias copy="xclip -selection clipboard"
-alias paste="xclip -o -selection clipboard"
+if which xclip >/dev/null 2>&1; then
+  alias copy="xclip -selection clipboard"
+  alias paste="xclip -o -selection clipboard"
+fi
 
 # tmux
-alias t=tmux
-alias tl='tmux ls'
-alias tn='tmux new -s'
-alias ta='tmux attach -t'
-alias tk='tmux kill-session -t'
-alias tks='tmux kill-server'
+if which tmux >/dev/null 2>&1; then
+  alias t=tmux
+  alias tl='tmux ls'
+  alias tn='tmux new -s'
+  alias ta='tmux attach -t'
+  alias tk='tmux kill-session -t'
+  alias tks='tmux kill-server'
+fi
 
 # shortcuts
 alias dl="cd ~/Downloads"
@@ -41,13 +40,18 @@ alias dwgh="cd ~/workspace/github.com"
 alias dwgl="cd ~/workspace/gitlab.com"
 
 # mac hide/show all desktop icons
-alias desktophide="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
-alias desktopshow="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+if which defaults >/dev/null 2>&1; then
+  alias desktophide="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
+  alias desktopshow="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+fi
 
-# others
-alias v=nvim
-alias vim=nvim
-alias vi=vim
+# vim related
+if which nvim > /dev/null 2>&1; then
+  alias v=nvim
+  alias vim=nvim
+  alias vi=vim
+fi
+
 alias k=kubectl
 alias rr='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
 alias dk=docker

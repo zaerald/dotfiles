@@ -83,8 +83,6 @@ plugins=(
   git
   dnf
   npm
-  docker
-  docker-compose
   zsh-autosuggestions
   zsh-syntax-highlighting
 )
@@ -107,6 +105,23 @@ source $ZSH/oh-my-zsh.sh
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
+
+# regenerate compdump once a day
+if [[ $OSTYPE == 'darwin'* ]]; then
+  autoload -Uz compinit
+  if [ $(date +'%j') != $(stat -f '%Sm' -t '%j' ~/.zcompdump) ]; then
+    compinit
+  else
+    compinit -C
+  fi
+else
+  autoload -Uz compinit
+  for dump in ~/.zcompdump(N.mh+24); do
+    compinit
+  done
+  compinit -C
+fi
+
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

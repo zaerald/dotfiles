@@ -22,6 +22,8 @@ brew "fx"
 brew "gifski"
 # Distributed revision control system
 brew "git"
+# Tcl/Tk UI for the git revision control system
+brew "git-gui"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
 # Convert source code to formatted text with syntax highlighting
@@ -34,6 +36,8 @@ brew "jenv"
 brew "libcaca"
 # Text-based web browser
 brew "lynx"
+# Java-based project management
+brew "maven"
 # Unified display of technical and tag data for audio/video
 brew "media-info"
 # Cross platform, open source .NET development framework
@@ -42,12 +46,16 @@ brew "mono"
 brew "neovim"
 # Manage multiple Node.js versions
 brew "nvm"
+# Cross-platform application and UI framework
+brew "qt"
 # PDF rendering library (based on the xpdf-3.0 code base)
 brew "poppler"
 # Show ps output as a tree
 brew "pstree"
 # File browser
 brew "ranger", args: ["HEAD"]
+# Persistent key-value database, with built-in net interface
+brew "redis"
 # Terminal-based client for Spotify
 brew "spotify-tui"
 # Feature-rich console based todo list manager
@@ -68,6 +76,8 @@ cask "alfred"
 cask "anki"
 # Server and cloud storage browser
 cask "cyberduck"
+# Voice and text chat software
+cask "discord"
 # Web browser
 cask "firefox"
 # Terminal emulator as alternative to Apple's Terminal app
@@ -80,6 +90,8 @@ cask "notion"
 cask "postman"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
+# Video chat, voice call and instant messaging application
+cask "skype"
 # Team communication and collaboration software
 cask "slack"
 # Music streaming service

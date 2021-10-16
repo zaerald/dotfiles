@@ -23,10 +23,16 @@ dtf push
 ```
 
 ## Brew
+Generate bundle
 ```
-brew bundle dump --describe --global
+rm -rf $HOME/.Brewfile; brew bundle dump --describe --global
+```
+
+Install bundle
+```
 brew bundle install --global
 ```
+
 
 ## Vim
 ```

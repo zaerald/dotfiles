@@ -98,13 +98,14 @@ call plug#begin('~/.vim/plugged')
 Plug 'gruvbox-community/gruvbox'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-utils/vim-man'
-Plug 'git@github.com:kien/ctrlp.vim.git'
 Plug 'mbbill/undotree'
 Plug 'vim-airline/vim-airline'
 Plug 'ryanoasis/vim-devicons'
 Plug 'junegunn/goyo.vim'
 Plug 'mhinz/vim-signify'
+Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-fzy-native.nvim'
 
 Plug 'sbdchd/neoformat'
 Plug 'prettier/vim-prettier', {
@@ -124,11 +125,6 @@ let g:airline_theme='gruvbox'
 set background=dark
 highlight Normal guibg=NONE ctermbg=NONE
 
-if executable('rg')
-  let g:rg_derive_root='true'
-endif
-
-let g:ctrlp_user_command=['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 let g:netrw_browse_split=0
 let g:netrw_banner=0
 let g:netrw_winsize=25
@@ -145,6 +141,13 @@ endif
 " -- plugin mappings --
 nnoremap <leader>u :UndotreeShow<CR>
 nmap <Leader>py <Plug>(Prettier)
+
+" - telescope
+nnoremap <C-p> <cmd>Telescope git_files<cr>
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 " -- custom mappings --
 nnoremap <leader>q :q!

@@ -48,8 +48,8 @@ fi
 # vim related
 if which nvim > /dev/null 2>&1; then
   alias v=nvim
-  alias vim=nvim
   alias vi=vim
+  alias vim=nvim
 fi
 
 alias k=kubectl

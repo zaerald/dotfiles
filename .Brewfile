@@ -80,10 +80,14 @@ cask "cyberduck"
 cask "discord"
 # Web browser
 cask "firefox"
+# Java IDE by JetBrains
+cask "intellij-idea"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 # Menu bar calendar
 cask "itsycal"
+# Open-source keystroke visualizer
+cask "keycastr"
 # App to write, plan, collaborate, and get organized
 cask "notion"
 # Collaboration platform for API development
@@ -96,6 +100,8 @@ cask "skype"
 cask "slack"
 # Music streaming service
 cask "spotify"
+# Free and open-source hosted hypervisor for x86 virtualization
+cask "virtualbox"
 # Open-source code editor
 cask "visual-studio-code"
 # Video communication and virtual meeting platform

@@ -1,9 +1,9 @@
-source ~/.config/nvim/plugin/sets.vim
-source ~/.config/nvim/plugin/zmap.vim
-
 set encoding=utf-8
 scriptencoding utf-8
 let mapleader=" "
+
+source ~/.config/nvim/plugin/sets.vim
+source ~/.config/nvim/plugin/zmap.vim
 
 " -- intellij only config --
 set NERDTree

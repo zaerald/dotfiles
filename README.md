@@ -33,10 +33,26 @@ Install bundle
 brew bundle install --global
 ```
 
-
 ## Vim
+### Plugin Manager
+- [vim-plug](https://github.com/junegunn/vim-plug)
+
 ```
 :PluginInstall
 :PluginUpdate
+```
+
+### Manual Plugin Installation
+- [open-browser](https://github.com/tyru/open-browser.vim)
+- [vim-surround](https://github.com/tpope/vim-surround)
+
+```
+vimplugin='open-browser'
+if [[ -n $vimplugin ]]; then
+  mkdir -p "$HOME/.config/nvim/pack/$vimplugin/start/"
+  cd "$HOME/.config/nvim/pack/$vimplugin/start/"
+  git clone --depth 1 git@github.com:tyru/open-browser.vim.git
+fi
+unset vimplugin
 ```
 

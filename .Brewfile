@@ -6,14 +6,22 @@ tap "homebrew/core"
 brew "atool"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.9"
+# Core application library for C
+brew "glib"
 # Cross-platform make
 brew "cmake"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
 # Pack, ship and run any application as a lightweight container
 brew "docker"
 # Text mode web browser
 brew "elinks"
 # Perl lib for reading and writing EXIF metadata
 brew "exiftool"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
 # Platform built on V8 to build network applications
 brew "node"
 # Command-line JSON processing tool
@@ -24,8 +32,16 @@ brew "gifski"
 brew "git"
 # Tcl/Tk UI for the git revision control system
 brew "git-gui"
+# GNU implementation of the famous stream editor
+brew "gnu-sed"
+# GNU version of the tar archiving utility
+brew "gnu-tar"
+# GNU implementation of which utility
+brew "gnu-which"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# GNU grep, egrep and fgrep
+brew "grep"
 # Convert source code to formatted text with syntax highlighting
 brew "highlight"
 # Improved top (interactive process viewer)
@@ -56,6 +72,12 @@ brew "pstree"
 brew "ranger", args: ["HEAD"]
 # Persistent key-value database, with built-in net interface
 brew "redis"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Powerful, clean, object-oriented scripting language
+brew "ruby"
+# Install Ruby, JRuby, Rubinius, TruffleRuby, or mruby
+brew "ruby-install"
 # Terminal-based client for Spotify
 brew "spotify-tui"
 # Feature-rich console based todo list manager
@@ -66,6 +88,8 @@ brew "tmux"
 brew "transmission-cli"
 # Vi 'workalike' with many additional features
 brew "vim"
+# Internet file retriever
+brew "wget"
 # UNIX shell (command interpreter)
 brew "zsh"
 # It's like cat(1), but for images.
@@ -82,6 +106,8 @@ cask "discord"
 cask "firefox"
 # Java IDE by JetBrains
 cask "intellij-idea"
+# IDE for Java development - community edition
+cask "intellij-idea-ce"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 # Menu bar calendar

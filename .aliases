@@ -40,10 +40,25 @@ alias dwgh="cd ~/workspace/github.com"
 alias dwgl="cd ~/workspace/gitlab.com"
 
 # mac hide/show all desktop icons
-if which defaults >/dev/null 2>&1; then
+if which defaults > /dev/null 2>&1; then
   alias desktophide="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
   alias desktopshow="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
 fi
+
+# mac prefer GNU over BSD
+if which ggrep > /dev/null 2>&1; then
+  alias grep=ggrep
+fi
+if which gsed > /dev/null 2>&1; then
+  alias sed=gsed
+fi
+if which gtar > /dev/null 2>&1; then
+  alias tar=gtar
+fi
+if which guniq > /dev/null 2>&1; then
+  alias uniq=guniq
+fi
+# end
 
 # vim related
 if which nvim > /dev/null 2>&1; then

@@ -7,6 +7,5 @@ export LANG=en_US.UTF-8
 
 # jenv
 export JAVA_HOME="$(jenv prefix)"
-export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 

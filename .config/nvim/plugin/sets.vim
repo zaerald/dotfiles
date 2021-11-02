@@ -61,7 +61,6 @@ set nocompatible " make vim more useful
 set showcmd " show the (partial) command as it’s being typed 
 set nobackup " don't keep a backup file
 set noswapfile " don't keep a swap file
-set undodir=~/.vim/undodir
 set undofile " undo file for each file opened
 set exrc " read config if present in directory
 set guicursor= " maintain block cursor type

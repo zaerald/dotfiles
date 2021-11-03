@@ -12,6 +12,7 @@ set idearefactormode=keep
 set clipboard+=ideaput
 set visualbell
 set surround
+set ideamarks
 " status intellij
 set showmode
 
@@ -19,55 +20,55 @@ set showmode
 nnoremap <leader>si :source ~/.ideavimrc<CR>
 
 " see :actionlist
-map ,rr <Action>(Run)
-map ,rc <Action>(ContextRun)
-map ,ry <Action>(ChooseRunConfiguration)
-map ,rd <Action>(Debug)
-map ,rs <Action>(Stop)
-map ,rg <Action>(ContextDebug)
-map ,b <Action>(ToggleLineBreakpoint)
+" running
+map <leader>rr <Action>(Run)
+map <leader>rc <Action>(ContextRun)
+map <leader>ry <Action>(ChooseRunConfiguration)
+map <leader>rd <Action>(Debug)
+map <leader>rs <Action>(Stop)
+map <leader>re <Action>(Resume)
+map <leader>rg <Action>(ContextDebug)
 
-map ,xf <Action>(ToggleDistractionFreeMode)
-map ,xx <Action>(HideAllWindows)<bar> <Action>(ActivateProjectToolWindow)
-map ,xc <Action>(HideAllWindows)<bar> <Action>(SelectInProjectView)
+" debugging
+map <leader>dv <Action>(StepOver)
+map <leader>di <Action>(StepInto)
+map <leader>dt <Action>(StepOut)
+map <leader>de <Action>(EvaluateExpression)
 
-map ,aa <Action>(GotoAction)
-map ,ae <Action>(SearchEverywhere)
-map ,ap <Action>(FindInPath)
-map ,ac <Action>(GotoClass)
-map ,af <Action>(GotoFile)
-map ,as <Action>(GotoSymbol)
-map ,hh <Action>(TypeHierarchy)
-map ,hm <Action>(MethodHierarchy)
-map ,hc <Action>(CallHierarchy)
-map ,o <Action>(OverrideMethods)
-map ,m <Action>(FileStructurePopup)
-map ,s <Action>(SelectInProjectView)
+" breakpoints
+map <leader>bb <Action>(ToggleLineBreakpoint)
+map <leader>bm <Action>(XDebugger.MuteBreakpoints)
 
-map ,wr <Action>(ActivateRunToolWindow)
-map ,wd <Action>(ActivateDebugToolWindow)
-map ,wb <Action>(ActivateBuildToolWindow)
-map ,we <Action>(ActivateEventLogToolWindow)
-map ,wm <Action>(ActivateProblemsViewToolWindow)
-map ,wt <Action>(ActivateTerminalToolWindow)
-map ,wo <Action>(Terminal.OpenInTerminal)
-map ,wp <Action>(JumpToLastWindow)
-
-map ge <Action>(GotoNextError)
-map gE <Action>(GotoPreviousError)
-map gi <Action>(GotoImap)
-map gd <Action>(GotoDeclaration)
-map gp <Action>(GotoSuperMethod)
-map gt <Action>(GotoTest)
-
+" refactoring
 map <leader>tt <Action>(Refactorings.QuickListPopupAction)
+
+" file navigation
+map <leader>aa <Action>(GotoAction)
+map <leader>ae <Action>(SearchEverywhere)
+map <leader>ap <Action>(FindInPath)
+map <leader>ac <Action>(GotoClass)
+map <leader>af <Action>(GotoFile)
+map <leader>as <Action>(GotoSymbol)
+map <leader>hh <Action>(TypeHierarchy)
+map <leader>hm <Action>(MethodHierarchy)
+map <leader>hc <Action>(CallHierarchy)
+map <leader>o <Action>(OverrideMethods)
+map <leader>m <Action>(FileStructurePopup)
+map <leader>s <Action>(SelectInProjectView)
 
 map <s-TAB> <Action>(PreviousTab)
 map <TAB> <Action>(NextTab)
 
 map <Leader>en <Action>(EditSourceInNewWindow)
-map <Leader>n <Action>(NextWindow)
-map <Leader>N <Action>(PreviousWindow)
+
+" text navigation
+map ge <Action>(GotoNextError)
+map gE <Action>(GotoPreviousError)
+map gs <Action>(GotoSuperMethod)
+map gi <Action>(GotoImplementation)
+map gd <Action>(GotoDeclaration)
+map gp <Action>(GotoSuperMethod)
+map gt <Action>(GotoTest)
 
 map [[ <Action>(MethodUp)
 map ]] <Action>(MethodDown)
@@ -76,3 +77,26 @@ map zc <Action>(CollapseRegion)
 map zo <Action>(ExpandRegion)
 map <leader>zc <Action>(CollapseAllRegions)
 map <leader>zo <Action>(ExpandAllRegions)
+
+" yanking
+map <leader>yr <Action>(CopyReference)
+map <leader>yp <Action>(CopyPaths)
+
+" windows
+map <leader>wr <Action>(ActivateRunToolWindow)
+map <leader>wd <Action>(ActivateDebugToolWindow)
+map <leader>wb <Action>(ActivateBuildToolWindow)
+map <leader>we <Action>(ActivateEventLogToolWindow)
+map <leader>wm <Action>(ActivateProblemsViewToolWindow)
+map <leader>wt <Action>(ActivateTerminalToolWindow)
+map <leader>wo <Action>(Terminal.OpenInTerminal)
+map <leader>wp <Action>(JumpToLastWindow)
+
+" window layout
+map <leader>xf <Action>(ToggleDistractionFreeMode)
+map <leader>xx <Action>(HideAllWindows)<bar> <Action>(ActivateProjectToolWindow) <Action>(FocusEditor)
+map <leader>xc <Action>(HideAllWindows)<bar> <Action>(SelectInProjectView)<bar> <Action>(FocusEditor)
+
+" windows navigation
+map <Leader>n <Action>(NextWindow)
+map <Leader>N <Action>(PreviousWindow)

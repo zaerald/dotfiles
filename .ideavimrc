@@ -149,7 +149,7 @@ map <leader>wp <Action>(JumpToLastWindow)
 
 " window layout
 map <leader>xf <Action>(ToggleDistractionFreeMode)
-map <leader>xx <Action>(HideAllWindows)<bar> <Action>(ActivateProjectToolWindow) <Action>(FocusEditor)
+map <leader>xx <Action>(HideAllWindows)
 map <leader>xc <Action>(HideAllWindows)<bar> <Action>(SelectInProjectView)<bar> <Action>(FocusEditor)
 
 " windows navigation

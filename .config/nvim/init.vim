@@ -35,6 +35,11 @@ Plug 'vwxyutarooo/nerdtree-devicons-syntax'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" utils
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
+Plug 'tyru/open-browser.vim'
+
 " misc
 Plug 'sbdchd/neoformat'
 Plug 'junegunn/goyo.vim'

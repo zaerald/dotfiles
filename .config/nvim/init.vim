@@ -6,7 +6,7 @@ syntax enable " enable syntax highlighting
 
 " -- plugins --
 " initialize vim-plug
-call plug#begin('~/.vim/plugged')
+call plug#begin(stdpath('data') . '/plugged')
 
 " color schemes
 Plug 'gruvbox-community/gruvbox'
@@ -32,6 +32,8 @@ Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'vwxyutarooo/nerdtree-devicons-syntax'
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " misc
 Plug 'sbdchd/neoformat'

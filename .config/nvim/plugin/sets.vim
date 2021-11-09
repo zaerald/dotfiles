@@ -38,8 +38,8 @@ set mouse=a " enable mouse for scrolling and resizing
 set title " set the window’s title, reflecting the file currently being edited
 set showmode " mode message on last line
 set showcmd " show command in the last line of the screen
-set cmdheight=1 " give more space for messages
-set signcolumn=yes
+set cmdheight=2 " give more space for messages
+set signcolumn=number
 set updatetime=50
 " status lines
 set laststatus=2 " always display the status bar
@@ -60,11 +60,13 @@ set nrformats-=octal " interpret octal as decimal when incrementing numbers
 set nocompatible " make vim more useful
 set showcmd " show the (partial) command as it’s being typed 
 set nobackup " don't keep a backup file
+set nowritebackup
 set noswapfile " don't keep a swap file
 set undofile " undo file for each file opened
 set exrc " read config if present in directory
 set guicursor= " maintain block cursor type
 set clipboard+=unnamedplus
+" don't pass messages to |ins-completion-menu|
 set shortmess+=c
 set spelllang=en,cjk
 " show nine spell checking candidates at most

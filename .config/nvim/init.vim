@@ -14,7 +14,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'ryanoasis/vim-devicons'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'mhinz/vim-startify'
-Plug 'vim-utils/vim-man'
 Plug 'mhinz/vim-signify'
 Plug 'norcalli/nvim-colorizer.lua'
 
@@ -36,9 +35,13 @@ Plug 'vwxyutarooo/nerdtree-devicons-syntax'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " utils
+Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'tyru/open-browser.vim'
+Plug 'Raimondi/delimitMate'
+Plug 'vim-utils/vim-man'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npm install'  }
 
 " misc
 Plug 'sbdchd/neoformat'

@@ -43,8 +43,6 @@ brew bundle install --global
 ```
 
 ### Manual Plugin Installation
-- [open-browser](https://github.com/tyru/open-browser.vim)
-- [vim-surround](https://github.com/tpope/vim-surround)
 
 ```
 vimplugin='open-browser'

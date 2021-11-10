@@ -39,7 +39,7 @@ set title " set the window’s title, reflecting the file currently being edited
 set showmode " mode message on last line
 set showcmd " show command in the last line of the screen
 set cmdheight=2 " give more space for messages
-set signcolumn=number
+set signcolumn=yes
 set updatetime=50
 " status lines
 set laststatus=2 " always display the status bar

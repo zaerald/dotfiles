@@ -20,3 +20,7 @@ nnoremap <silent> <leader>bo :w <bar> %bd <bar> e# <bar> bd# <CR><CR>
 " allow saving of files as sudo
 cmap w!! w !sudo tee > /dev/null %
 
+" write to shell
+nnoremap <silent> <leader>xs :.w !$SHELL<CR>
+nnoremap <silent> <leader>xS :w !$SHELL<CR>
+

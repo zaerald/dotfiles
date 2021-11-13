@@ -22,5 +22,6 @@ cmap w!! w !sudo tee > /dev/null %
 
 " write to shell
 nnoremap <silent> <leader>xs :.w !$SHELL<CR>
+xnoremap <silent> <leader>xs :.w !$SHELL<CR>
 nnoremap <silent> <leader>xS :w !$SHELL<CR>
 

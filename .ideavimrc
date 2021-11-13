@@ -155,3 +155,5 @@ map <leader>xc <Action>(HideAllWindows)<bar> <Action>(SelectInProjectView)<bar> 
 " windows navigation
 map <Leader>n <Action>(NextWindow)
 map <Leader>N <Action>(PreviousWindow)
+
+map K <Action>(QuickJavaDoc)

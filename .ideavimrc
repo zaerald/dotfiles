@@ -5,6 +5,8 @@ let mapleader=" "
 source ~/.config/nvim/plugin/sets.vim
 source ~/.config/nvim/plugin/zmap.vim
 
+nnoremap <leader>ww :w<CR>
+
 " -- intellij only config --
 set NERDTree
 set ideajoin
@@ -50,6 +52,8 @@ map <leader>ap <Action>(FindInPath)
 map <leader>ac <Action>(GotoClass)
 map <leader>af <Action>(GotoFile)
 map <leader>as <Action>(GotoSymbol)
+map <leader>ar <Action>(RecentFiles)
+map <leader>ao <Action>(RecentLocations)
 map <leader>hh <Action>(TypeHierarchy)
 map <leader>hm <Action>(MethodHierarchy)
 map <leader>hc <Action>(CallHierarchy)

@@ -41,6 +41,9 @@ map <leader>dr <Action>(Resume)
 " breakpoints
 map <leader>bb <Action>(ToggleLineBreakpoint)
 map <leader>bm <Action>(XDebugger.MuteBreakpoints)
+map <leader>be <Action>(EditBreakpoint)
+map <leader>bw <Action>(ViewBreakpoints)
+map <leader>br <Action>(Debugger.RemoveAllBreakpoints)
 
 " refactoring
 map <leader>tt <Action>(Refactorings.QuickListPopupAction)

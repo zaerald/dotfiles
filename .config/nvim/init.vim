@@ -17,9 +17,6 @@ Plug 'mhinz/vim-startify'
 Plug 'mhinz/vim-signify'
 Plug 'norcalli/nvim-colorizer.lua'
 
-Plug 'tpope/vim-fugitive'
-Plug 'mbbill/undotree'
-
 " telescope
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
@@ -33,11 +30,15 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'vwxyutarooo/nerdtree-devicons-syntax'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'mxw/vim-jsx'
+Plug 'pangloss/vim-javascript'
 
 " utils
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
+Plug 'mbbill/undotree'
 Plug 'tyru/open-browser.vim'
 Plug 'Raimondi/delimitMate'
 Plug 'vim-utils/vim-man'

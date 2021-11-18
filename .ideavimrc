@@ -163,4 +163,7 @@ map <leader>xc <Action>(HideAllWindows)<bar> <Action>(SelectInProjectView)<bar> 
 map <Leader>n <Action>(NextWindow)
 map <Leader>N <Action>(PreviousWindow)
 
-map K <Action>(QuickJavaDoc)
+" utils
+map K<Action>(QuickJavaDoc)
+map <leader>E <Action>(ShowErrorDescription)
+

@@ -12,11 +12,12 @@
   s = status -s
   st = status
   dino = diff --name-only
-  co = checkout
+  c = checkout
   cb = checkout -b
-  br = branch
-  brn = branch --show-current
-  brb = branch --show-branch
+  b = branch
+  br = branch -r
+  bn = branch --show-current
+  bb = branch --show-branch
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
   l = log --pretty=oneline -n 20 --graph --abbrev-commit
   lo = log --oneline
@@ -28,6 +29,8 @@
   pu = push -u origin HEAD
   pl = pull
   rhh = reset --hard HEAD
+  rb = rebase
+  rbo = rebase --onto
   t = tag
   ts = tag -l
   sq = "!f() { git reset HEAD~$1; }; f"

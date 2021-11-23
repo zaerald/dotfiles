@@ -151,6 +151,7 @@ map <leader>wb <Action>(ActivateBuildToolWindow)
 map <leader>we <Action>(ActivateEventLogToolWindow)
 map <leader>wm <Action>(ActivateProblemsViewToolWindow)
 map <leader>wt <Action>(ActivateTerminalToolWindow)
+map <leader>wf <Action>(ActivateFindToolWindow)
 map <leader>wo <Action>(Terminal.OpenInTerminal)
 map <leader>wp <Action>(JumpToLastWindow)
 

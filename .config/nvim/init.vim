@@ -29,9 +29,12 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'vwxyutarooo/nerdtree-devicons-syntax'
 
+" lsp and langs
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 " utils
 Plug 'tpope/vim-repeat'

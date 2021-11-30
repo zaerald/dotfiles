@@ -9,3 +9,11 @@ export LANG=en_US.UTF-8
 export JAVA_HOME="$(jenv prefix)"
 eval "$(jenv init -)"
 
+# gnu
+if which brew > /dev/null 2>&1; then
+  BREW_PREFIX="/usr/local"
+  PATH="$BREW_PREFIX/opt/gnu-sed/libexec/gnubin:$PATH"
+  PATH="$BREW_PREFIX/opt/grep/libexec/gnubin:$PATH"
+  PATH="$BREW_PREFIX/opt/gnu-tar/libexec/gnubin:$PATH"
+fi
+

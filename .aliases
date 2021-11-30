@@ -48,21 +48,6 @@ if which defaults > /dev/null 2>&1; then
   alias desktopshow="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
 fi
 
-# mac prefer GNU over BSD
-if which ggrep > /dev/null 2>&1; then
-  alias grep=ggrep
-fi
-if which gsed > /dev/null 2>&1; then
-  alias sed=gsed
-fi
-if which gtar > /dev/null 2>&1; then
-  alias tar=gtar
-fi
-if which guniq > /dev/null 2>&1; then
-  alias uniq=guniq
-fi
-# end
-
 # always enable colored `grep` output
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'

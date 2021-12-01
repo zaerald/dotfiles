@@ -9,6 +9,8 @@ export LANG=en_US.UTF-8
 export JAVA_HOME="$(jenv prefix)"
 eval "$(jenv init -)"
 
+export GOPATH=~/go
+
 # gnu
 if which brew > /dev/null 2>&1; then
   BREW_PREFIX="/usr/local"

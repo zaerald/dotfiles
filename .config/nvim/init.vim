@@ -39,8 +39,8 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " utils
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
-Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
+Plug 'numToStr/Comment.nvim'
 Plug 'mbbill/undotree'
 Plug 'tyru/open-browser.vim'
 Plug 'Raimondi/delimitMate'

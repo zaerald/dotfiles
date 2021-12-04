@@ -70,6 +70,15 @@ map <Leader>en <Action>(EditSourceInNewWindow)
 map <s-TAB> <Action>(PreviousTab)
 map <TAB> <Action>(NextTab)
 
+" TabMover(10131-tabmover) plugin actions
+map <leader><C-w>h <Action>(com.mnw.tabmover.actions.MoveTabUpAction)
+map <leader><C-w>j <Action>(com.mnw.tabmover.actions.MoveTabToLastAction)
+map <leader><C-w>k <Action>(com.mnw.tabmover.actions.MoveTabToFirstAction)
+map <leader><C-w>l <Action>(com.mnw.tabmover.actions.MoveTabDownAction)
+
+map <leader><C-w>H <Action>(com.mnw.tabmover.actions.MoveTabToPreviousWindow)
+map <leader><C-w>L <Action>(com.mnw.tabmover.actions.MoveTabToNextWindow)
+
 " text navigation
 map ge <Action>(GotoNextError)
 map gE <Action>(GotoPreviousError)
@@ -86,6 +95,12 @@ map zc <Action>(CollapseRegion)
 map zo <Action>(ExpandRegion)
 map <leader>zc <Action>(CollapseAllRegions)
 map <leader>zo <Action>(ExpandAllRegions)
+
+" text manipulation
+map <leader><C-m>h <Action>(MoveElementLeft)
+map <leader><C-m>j <Action>(MoveLineDown)
+map <leader><C-m>k <Action>(MoveLineUp)
+map <leader><C-m>l <Action>(MoveElementRight)
 
 " marks
 map m1 <Action>(ToggleBookmark1)
@@ -139,7 +154,6 @@ map 'z <Action>(GotoBookmarkZ)
 
 map <leader><C-b> <Action>(ShowBookmarks)
 
-
 " yanking
 map <leader>yr <Action>(CopyReference)
 map <leader>yp <Action>(CopyPaths)
@@ -165,6 +179,8 @@ map <Leader>n <Action>(NextWindow)
 map <Leader>N <Action>(PreviousWindow)
 
 " utils
-map K<Action>(QuickJavaDoc)
+map K <Action>(QuickJavaDoc)
 map <leader>E <Action>(ShowErrorDescription)
 
+" others
+map <leader>MD <Action>(zd.zero.waifu.motivator.plugin.actions.ShowWaifuOfTheDayAction)

@@ -31,16 +31,19 @@ Plug 'vwxyutarooo/nerdtree-devicons-syntax'
 
 " lsp and langs
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'mattn/emmet-vim'
 
 Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
+Plug 'tpope/vim-commentary'
+Plug 'JoosepAlviste/nvim-ts-context-commentstring'
+
 " utils
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
-Plug 'numToStr/Comment.nvim'
 Plug 'mbbill/undotree'
 Plug 'tyru/open-browser.vim'
 Plug 'Raimondi/delimitMate'

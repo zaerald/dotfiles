@@ -66,7 +66,7 @@ nmap <leader>a  <Plug>(coc-codeaction-selected)
 " remap keys for applying codeAction to the current buffer.
 nmap <leader>ac  <Plug>(coc-codeaction)
 " apply AutoFix to problem on the current line.
-nmap <leader>fc  <Plug>(coc-fix-current)
+nmap <leader>f  <Plug>(coc-fix-current)
 
 " map function and class text objects
 " NOTE: Requires 'textDocument.documentSymbol' support from the language server.

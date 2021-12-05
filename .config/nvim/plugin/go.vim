@@ -8,6 +8,7 @@ function! s:build_go_files()
   endif
 endfunction
 
+autocmd FileType go nmap <leader>rr :GoRun<CR>
 autocmd FileType go nmap <leader>b :<C-u>call <SID>build_go_files()<CR>
 autocmd FileType go nmap <Leader>c <Plug>(go-coverage-toggle)
 autocmd FileType go nmap <leader>t <Plug>(go-test)

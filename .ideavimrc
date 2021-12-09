@@ -156,7 +156,8 @@ map <leader><C-b> <Action>(ShowBookmarks)
 
 " yanking
 map <leader>yr <Action>(CopyReference)
-map <leader>yp <Action>(CopyPaths)
+map <leader>yP <Action>(CopyPaths)
+map <leader>yp <Action>(CopyPathFromRepositoryRootProvider)
 
 " windows
 map <leader>wr <Action>(ActivateRunToolWindow)

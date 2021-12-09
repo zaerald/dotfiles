@@ -12,7 +12,7 @@
   s = status -s
   st = status
   dino = diff --name-only
-  c = checkout
+  co = checkout
   cb = checkout -b
   b = branch
   br = branch -r

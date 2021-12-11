@@ -45,9 +45,8 @@ set updatetime=50
 set laststatus=2 " always display the status bar
 
 " -- code folding options --
-set foldmethod=indent " fold based on indention levels.
-set foldnestmax=3 " only fold up to three nested levels
-set nofoldenable " disable folding by default
+set foldmethod=manual
+set nofoldenable
 
 " -- misc --
 set autoread " automatically re-read files if unmodified inside Vim

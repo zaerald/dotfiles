@@ -6,6 +6,9 @@ if has("autocmd")
   " treat .md files as Markdown
   autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
 
+  autocmd BufNewFile,BufRead *.{ts,tsx} set filetype=typescriptreact
+  autocmd BufNewFile,BufRead *.{js,jsx} set filetype=javascriptreact
+
   autocmd BufNewFile,BufRead *.{js,jsx,ts,tsx} :syntax sync fromstart
   autocmd BufNewFile,BufRead *.{js,jsx,ts,tsx} :syntax sync clear
 endif

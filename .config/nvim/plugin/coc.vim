@@ -126,3 +126,24 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>e
 
+" servers
+let g:coc_global_extensions = [
+  \   'coc-highlight'
+  \ , 'coc-snippets'
+  \ , 'coc-prettier'
+  \ , 'coc-json'
+  \ , 'coc-yaml'
+  \ , 'coc-xml'
+  \ , 'coc-svg'
+  \ , 'coc-html'
+  \ , 'coc-tsserver'
+  \ , 'coc-eslint'
+  \ , 'coc-css'
+  \ , 'coc-tailwindcss'
+  \ , 'coc-sh'
+  \ , 'coc-java'
+  \ , 'coc-go'
+  \ , 'coc-pyright'
+  \ , 'coc-snippets'
+  \ , 'coc-lua'
+  \ ]

@@ -16,12 +16,12 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'mhinz/vim-startify'
 Plug 'mhinz/vim-signify'
 Plug 'norcalli/nvim-colorizer.lua'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " telescope
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzy-native.nvim'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " nerdtree
 Plug 'preservim/nerdtree'
@@ -32,8 +32,9 @@ Plug 'vwxyutarooo/nerdtree-devicons-syntax'
 " lsp and langs
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-Plug 'mxw/vim-jsx'
-Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
+
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 Plug 'tpope/vim-commentary'

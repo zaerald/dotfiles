@@ -26,5 +26,5 @@ xnoremap <silent> <leader>xs :.w !$SHELL<CR>
 nnoremap <silent> <leader>xS :w !$SHELL<CR>
 
 " search highlight
-nnoremap <leader><C-h> :set hlsearch!<CR>
+nnoremap <leader><C-l> :set hlsearch!<CR>
 

@@ -6,5 +6,5 @@ require'nvim-treesitter.configs'.setup {
 }
 EOF
 
-autocmd FileType javascript.jsx,typescript.tsx setlocal commentstring={/*\ %s\ */}
+autocmd FileType typescriptreact,javascript.jsx,typescript.tsx setlocal commentstring={/*\ %s\ */}
 

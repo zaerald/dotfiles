@@ -31,7 +31,6 @@ Plug 'vwxyutarooo/nerdtree-devicons-syntax'
 
 " lsp and langs
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'mattn/emmet-vim'
 
 Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'

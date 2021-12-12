@@ -32,6 +32,9 @@ Plug 'vwxyutarooo/nerdtree-devicons-syntax'
 " lsp and langs
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+
+Plug 'pangloss/vim-javascript'
+Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 

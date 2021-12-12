@@ -9,7 +9,7 @@ if has("autocmd")
   autocmd BufNewFile,BufRead *.{ts,tsx} set filetype=typescriptreact
   autocmd BufNewFile,BufRead *.{js,jsx} set filetype=javascriptreact
 
-  autocmd BufNewFile,BufRead *.{js,jsx,ts,tsx} :syntax sync fromstart
-  autocmd BufNewFile,BufRead *.{js,jsx,ts,tsx} :syntax sync clear
+  autocmd BufNewFile,BufRead,BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
+  autocmd BufNewFile,BufRead,BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
 endif
 

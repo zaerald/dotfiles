@@ -70,6 +70,10 @@ map <Leader>en <Action>(EditSourceInNewWindow)
 map <s-TAB> <Action>(PreviousTab)
 map <TAB> <Action>(NextTab)
 
+" tab manipulation
+map <leader><C-w>ch <Action>(CloseAllToTheLeft)
+map <leader><C-w>cl <Action>(CloseAllToTheRight)
+
 " TabMover(10131-tabmover) plugin actions
 map <leader><C-w>h <Action>(com.mnw.tabmover.actions.MoveTabUpAction)
 map <leader><C-w>j <Action>(com.mnw.tabmover.actions.MoveTabToLastAction)
@@ -171,6 +175,7 @@ map <leader>wt <Action>(ActivateTerminalToolWindow)
 map <leader>wf <Action>(ActivateFindToolWindow)
 map <leader>wo <Action>(Terminal.OpenInTerminal)
 map <leader>wp <Action>(JumpToLastWindow)
+map <leader>wn <Action>(ActivateEndpointsToolWindow)
 
 " window layout
 map <leader>xf <Action>(ToggleDistractionFreeMode)

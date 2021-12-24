@@ -21,7 +21,7 @@ set showmode
 " -- intellij mappings --
 nnoremap <leader>si :source ~/.ideavimrc<CR>
 
-" see :actionlist
+" :actionlist
 " running
 map <leader>rr <Action>(Run)
 map <leader>rc <Action>(ContextRun)
@@ -32,6 +32,7 @@ map <leader>rs <Action>(Stop)
 map <leader>re <Action>(Resume)
 
 " debugging
+map = <Action>(StepOver)
 map <leader>dv <Action>(StepOver)
 map <leader>di <Action>(StepInto)
 map <leader>dt <Action>(StepOut)
@@ -44,9 +45,6 @@ map <leader>bm <Action>(XDebugger.MuteBreakpoints)
 map <leader>be <Action>(EditBreakpoint)
 map <leader>bw <Action>(ViewBreakpoints)
 map <leader>br <Action>(Debugger.RemoveAllBreakpoints)
-
-" refactoring
-map <leader>tt <Action>(Refactorings.QuickListPopupAction)
 
 " file navigation
 map <leader>aa <Action>(GotoAction)
@@ -103,10 +101,21 @@ map <leader>zc <Action>(CollapseAllRegions)
 map <leader>zo <Action>(ExpandAllRegions)
 
 " text manipulation
-map <leader><C-m>h <Action>(MoveElementLeft)
-map <leader><C-m>j <Action>(MoveLineDown)
-map <leader><C-m>k <Action>(MoveLineUp)
-map <leader><C-m>l <Action>(MoveElementRight)
+map <leader>R <Action>(ReformatCode)
+map <leader>Mh <Action>(MoveElementLeft)
+map <leader>Mj <Action>(MoveLineDown)
+map <leader>Mk <Action>(MoveLineUp)
+map <leader>Ml <Action>(MoveElementRight)
+
+" refactoring
+map <leader>tt <Action>(Refactorings.QuickListPopupAction)
+map <leader>ts <Action>(SurroundWith)
+
+" find
+map <leader>fs <Action>(FindUsages)
+map <leader>fl <Action>(FindUsagesInFile)
+map <leader>fn <Action>(FindNext)
+map <leader>fN <Action>(FindPrevious)
 
 " marks
 map m1 <Action>(ToggleBookmark1)
@@ -187,7 +196,7 @@ map <Leader>n <Action>(NextWindow)
 map <Leader>N <Action>(PreviousWindow)
 
 " utils
-map K <Action>(QuickJavaDoc)
+map <leader>K <Action>(QuickJavaDoc)
 map <leader>E <Action>(ShowErrorDescription)
 
 " others

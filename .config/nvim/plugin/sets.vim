@@ -64,7 +64,6 @@ set noswapfile " don't keep a swap file
 set undofile " undo file for each file opened
 set exrc " read config if present in directory
 set guicursor= " maintain block cursor type
-set clipboard+=unnamedplus
 " don't pass messages to |ins-completion-menu|
 set shortmess+=c
 set spelllang=en,cjk

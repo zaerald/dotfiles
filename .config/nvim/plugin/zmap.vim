@@ -1,7 +1,6 @@
+nnoremap <C-c> <Esc>
 nnoremap <leader>q :q!
 nnoremap <leader>w :w<CR>
-nnoremap <leader>Y gg"+yG
-nnoremap <C-c> <Esc>
 
 nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>j :wincmd j<CR>
@@ -27,4 +26,15 @@ nnoremap <silent> <leader>xS :w !$SHELL<CR>
 
 " search highlight
 nnoremap <leader><C-l> :set hlsearch!<CR>
+
+" copy paste to system clipboard
+vnoremap <leader>yy "+y
+nnoremap <leader>YG gg"+yG
+nnoremap <leader>yy "+y
+nnoremap <leader>Y "+yy
+
+nnoremap <leader>p "+p
+nnoremap <leader>P "+P
+vnoremap <leader>p "+p
+vnoremap <leader>P "+P
 

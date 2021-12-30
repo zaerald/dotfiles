@@ -185,6 +185,8 @@ map <leader>wf <Action>(ActivateFindToolWindow)
 map <leader>wo <Action>(Terminal.OpenInTerminal)
 map <leader>wp <Action>(JumpToLastWindow)
 map <leader>wn <Action>(ActivateEndpointsToolWindow)
+map <leader>wg <Action>(ActivateGradleToolWindow)
+map <leader>wv <Action>(ActivateMavenToolWindow)
 
 " window layout
 map <leader>xf <Action>(ToggleDistractionFreeMode)

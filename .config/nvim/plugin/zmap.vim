@@ -27,14 +27,6 @@ nnoremap <silent> <leader>xS :w !$SHELL<CR>
 " search highlight
 nnoremap <leader><C-l> :set hlsearch!<CR>
 
-" copy paste to system clipboard
-vnoremap <leader>yy "+y
+" system clipboard
 nnoremap <leader>YG gg"+yG
-nnoremap <leader>yy "+y
-nnoremap <leader>Y "+yy
-
-nnoremap <leader>p "+p
-nnoremap <leader>P "+P
-vnoremap <leader>p "+p
-vnoremap <leader>P "+P
 

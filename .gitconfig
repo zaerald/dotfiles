@@ -9,6 +9,7 @@
   a = add
   aa = add .
   cm = commit -m
+  cmw = "!f() { git add . && git commit -m 'wip'; }; f"
   s = status -s
   st = status
   dino = diff --name-only

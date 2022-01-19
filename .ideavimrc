@@ -189,6 +189,7 @@ map <leader>wp <Action>(JumpToLastWindow)
 map <leader>wn <Action>(ActivateEndpointsToolWindow)
 map <leader>wg <Action>(ActivateGradleToolWindow)
 map <leader>wv <Action>(ActivateMavenToolWindow)
+map <leader>wG <Action>(Vcs.ShowTabbedFileHistory)
 
 " window layout
 map <leader>xf <Action>(ToggleDistractionFreeMode)
@@ -202,6 +203,7 @@ map <Leader>N <Action>(PreviousWindow)
 " utils
 map <leader>K <Action>(QuickJavaDoc)
 map <leader>E <Action>(ShowErrorDescription)
+map <leader><C-q> <Action>(CloseProject)
 
 " others
 map <leader>MD <Action>(zd.zero.waifu.motivator.plugin.actions.ShowWaifuOfTheDayAction)

@@ -128,6 +128,7 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>e
 let g:coc_global_extensions = [
   \   'coc-highlight'
   \ , 'coc-snippets'
+  \ , 'coc-ultisnips'
   \ , 'coc-prettier'
   \ , 'coc-json'
   \ , 'coc-yaml'
@@ -142,7 +143,6 @@ let g:coc_global_extensions = [
   \ , 'coc-java'
   \ , 'coc-go'
   \ , 'coc-pyright'
-  \ , 'coc-snippets'
   \ , 'coc-lua'
   \ ]
 

@@ -52,6 +52,7 @@ Plug 'tyru/open-browser.vim'
 Plug 'Raimondi/delimitMate'
 Plug 'vim-utils/vim-man'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npm install'  }
+Plug 'SirVer/ultisnips'
 
 " misc
 Plug 'sbdchd/neoformat'

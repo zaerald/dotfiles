@@ -15,6 +15,10 @@ set clipboard+=ideaput
 set visualbell
 set surround
 set ideamarks
+set commentary
+set argtextobj
+set vim-paragraph-motion
+set matchit
 " status intellij
 set showmode
 

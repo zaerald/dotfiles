@@ -1,22 +1,20 @@
 set encoding=utf-8
 scriptencoding utf-8
-" change leader key
 let mapleader=" "
-syntax enable " enable syntax highlighting
+syntax enable
 
 " -- plugins --
 " initialize vim-plug
 call plug#begin(stdpath('data') . '/plugged')
 
 " color schemes
-Plug 'gruvbox-community/gruvbox'
+Plug 'ellisonleao/gruvbox.nvim'
 Plug 'vim-airline/vim-airline'
 Plug 'ryanoasis/vim-devicons'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'mhinz/vim-startify'
 Plug 'mhinz/vim-signify'
 Plug 'norcalli/nvim-colorizer.lua'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " telescope
 Plug 'nvim-lua/plenary.nvim'
@@ -30,13 +28,9 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'vwxyutarooo/nerdtree-devicons-syntax'
 
 " lsp and langs
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-treesitter/nvim-treesitter-textobjects'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-
-Plug 'pangloss/vim-javascript'
-Plug 'MaxMEllon/vim-jsx-pretty'
-Plug 'leafgarland/typescript-vim'
-Plug 'peitalin/vim-jsx-typescript'
 
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 

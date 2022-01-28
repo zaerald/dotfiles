@@ -1,8 +1,10 @@
 #!/bin/bash
 
-# make vim the default editor.
-export EDITOR='nvim';
-export VISUAL='nvim';
+# make neovim the default editor.
+if which nvim > /dev/null 2>&1; then
+  export EDITOR='nvim';
+  export VISUAL='nvim';
+fi
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 

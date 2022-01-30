@@ -47,11 +47,13 @@ Plug 'Raimondi/delimitMate'
 Plug 'vim-utils/vim-man'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npm install'  }
 Plug 'SirVer/ultisnips'
+Plug 'sindrets/diffview.nvim'
 
 " misc
 Plug 'sbdchd/neoformat'
 Plug 'junegunn/goyo.vim'
 Plug 'mhinz/vim-rfc'
+Plug 'kyazdani42/nvim-web-devicons'
 
 call plug#end()
 

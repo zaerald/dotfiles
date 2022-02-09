@@ -208,6 +208,7 @@ map <Leader>N <Action>(PreviousWindow)
 map <leader>K <Action>(QuickJavaDoc)
 map <leader>E <Action>(ShowErrorDescription)
 map <leader><C-q> <Action>(CloseProject)
+map <leader><C-s-q> <Action>(CloseOtherProjects)
 
 " others
 map <leader>MD <Action>(zd.zero.waifu.motivator.plugin.actions.ShowWaifuOfTheDayAction)

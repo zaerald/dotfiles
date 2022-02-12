@@ -24,6 +24,8 @@ set showmode
 
 " -- intellij mappings --
 nnoremap <leader>si :source ~/.ideavimrc<CR>
+map j j
+map k k
 
 " :actionlist
 " running

@@ -9,6 +9,10 @@ nnoremap <leader>l :wincmd l<CR>
 nnoremap <silent> <Leader>+ :vertical resize +5<CR>
 nnoremap <silent> <Leader>- :vertical resize -5<CR>
 
+" add j and k to the jump list
+nnoremap <expr> j (v:count > 1 ? "m'" . v:count : '') . 'gj'
+nnoremap <expr> k (v:count > 1 ? "m'" . v:count : '') . 'gk'
+
 " insert lines without insert mode
 nnoremap o o<Esc>
 nnoremap O O<Esc>

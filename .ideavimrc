@@ -19,11 +19,17 @@ set commentary
 set argtextobj
 set vim-paragraph-motion
 set matchit
+set exchange
+set easymotion
+set highlightedyank
+let g:highlightedyank_highlight_duration = "500"
+
 " status intellij
 set showmode
 
 " -- intellij mappings --
-nnoremap <leader>si :source ~/.ideavimrc<CR>
+nnoremap \e :e ~/.ideavimrc<CR>
+nnoremap \r :source ~/.ideavimrc<CR>
 map j j
 map k k
 
@@ -36,6 +42,7 @@ map <leader>rd <Action>(Debug)
 map <leader>rg <Action>(ContextDebug)
 map <leader>rs <Action>(Stop)
 map <leader>re <Action>(Resume)
+map <leader>rf <Action>(RerunFailedTests)
 
 " debugging
 map = <Action>(StepOver)
@@ -95,6 +102,7 @@ map gi <Action>(GotoImplementation)
 map gd <Action>(GotoDeclaration)
 map gp <Action>(GotoSuperMethod)
 map gt <Action>(GotoTest)
+map gr <Action>(GotoRelated)
 map <C-s> <Action>(EditorSelectWord)
 map <C-s-s> <Action>(EditorUnSelectWord)
 map <C-i> <Action>(Forward)
@@ -200,6 +208,7 @@ map <leader>wG <Action>(Vcs.ShowTabbedFileHistory)
 " window layout
 map <leader>xf <Action>(ToggleDistractionFreeMode)
 map <leader>xx <Action>(HideAllWindows)
+map <C-x> <Action>(HideAllWindows)
 map <leader>xc <Action>(HideAllWindows)<bar> <Action>(SelectInProjectView)<bar> <Action>(FocusEditor)
 
 " windows navigation

@@ -48,6 +48,9 @@ Plug 'vim-utils/vim-man'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npm install'  }
 Plug 'SirVer/ultisnips'
 Plug 'sindrets/diffview.nvim'
+Plug 'easymotion/vim-easymotion'
+Plug 'tommcdo/vim-exchange'
+Plug 'machakann/vim-highlightedyank'
 
 " misc
 Plug 'sbdchd/neoformat'

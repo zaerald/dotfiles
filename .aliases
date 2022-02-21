@@ -30,7 +30,7 @@ if which tmux >/dev/null 2>&1; then
   alias tn='tmux new -s'
   alias ta='tmux attach -t'
   alias tk='tmux kill-session -t'
-  alias tks='tmux kill-server'
+  alias tkS='tmux kill-server'
 fi
 
 # shortcuts

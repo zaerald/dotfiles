@@ -49,6 +49,8 @@ map = <Action>(StepOver)
 map <leader>dv <Action>(StepOver)
 map <leader>di <Action>(StepInto)
 map <leader>dt <Action>(StepOut)
+map <leader>dc <Action>(RunToCursor)
+map <leader>dq <Action>(QuickEvaluateExpression)
 map <leader>de <Action>(EvaluateExpression)
 map <leader>dr <Action>(Resume)
 

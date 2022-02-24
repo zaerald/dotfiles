@@ -12,15 +12,11 @@ alias rl="exec ${SHELL} -l"
 # xclip
 if which xclip >/dev/null 2>&1; then
   alias c="xclip -selection clipboard"
-  alias copy="xclip -selection clipboard"
   alias p="xclip -o -selection clipboard"
-  alias paste="xclip -o -selection clipboard"
 fi
 if [[ $OSTYPE == 'darwin'* ]]; then
   alias c="pbcopy"
-  alias copy="pbcopy"
   alias p="pbpaste"
-  alias paste="pbpaste"
 fi
 
 # tmux

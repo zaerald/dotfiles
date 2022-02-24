@@ -136,6 +136,9 @@ map <leader>fn <Action>(FindNext)
 map <leader>fN <Action>(FindPrevious)
 
 " marks
+map <leader><C-b> <Action>(ShowBookmarks)
+map <leader>B <Action>(Bookmarks)
+
 map m1 <Action>(ToggleBookmark1)
 map m2 <Action>(ToggleBookmark2)
 map m3 <Action>(ToggleBookmark3)
@@ -184,8 +187,6 @@ map 'w <Action>(GotoBookmarkW)
 map 'x <Action>(GotoBookmarkX)
 map 'y <Action>(GotoBookmarkY)
 map 'z <Action>(GotoBookmarkZ)
-
-map <leader><C-b> <Action>(ShowBookmarks)
 
 " yanking
 map <leader>yr <Action>(CopyReference)

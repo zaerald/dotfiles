@@ -38,6 +38,7 @@
   sqb = "!f() { git reset HEAD~$(git rev-list --count $1..HEAD); }; f"
   rlc = "!f() { git rev-list --count $1..HEAD; }; f"
   count = "!f() { git rev-list --count $1..HEAD; }; f"
+  plb = "!f() { git fetch origin $1:$1; }; f"
   contributors = shortlog --summary --numbered
   whoami = config user.email
 

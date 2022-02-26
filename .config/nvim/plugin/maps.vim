@@ -28,6 +28,12 @@ nnoremap <silent> <leader>xs :.w !$SHELL<CR>
 xnoremap <silent> <leader>xs :.w !$SHELL<CR>
 nnoremap <silent> <leader>xS :w !$SHELL<CR>
 
+" toggles
+nnoremap <silent> col <Cmd>set list!<CR><Bar><Cmd>set list?<CR>
+nnoremap <silent> cor <Cmd>set relativenumber!<CR><Bar><Cmd>set relativenumber?<CR>
+nnoremap <silent> cos <Cmd>set spell!<CR><Bar><Cmd>set spell?<CR>
+nnoremap <silent> cow <Cmd>set wrap!<CR><Bar><Cmd>set wrap?<CR>
+
 " search highlight
 nnoremap <leader><C-l> :set hlsearch!<CR>
 

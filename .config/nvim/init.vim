@@ -51,6 +51,7 @@ Plug 'sindrets/diffview.nvim'
 Plug 'easymotion/vim-easymotion'
 Plug 'tommcdo/vim-exchange'
 Plug 'machakann/vim-highlightedyank'
+Plug 'ferrine/md-img-paste.vim'
 
 " misc
 Plug 'sbdchd/neoformat'

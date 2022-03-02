@@ -38,7 +38,7 @@ set mouse=a
 set title
 set showmode " mode message on last line
 set showcmd " show command in the last line of the screen
-set cmdheight=2 " give more space for messages
+set cmdheight=1 " give more space for messages
 set signcolumn=yes
 set updatetime=50
 " status lines

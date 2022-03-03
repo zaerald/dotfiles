@@ -24,6 +24,9 @@
   lo = log --oneline
   ca = commit --amend
   can = commit --amend --no-edit
+  ch = cherry
+  chv = cherry -v
+  chp = cherry-pick
   p = push
   pf = push -f
   pfl = push --force-with-lease

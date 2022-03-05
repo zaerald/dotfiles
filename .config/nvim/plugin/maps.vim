@@ -33,6 +33,7 @@ nnoremap <silent> col <Cmd>set list!<CR><Bar><Cmd>set list?<CR>
 nnoremap <silent> cor <Cmd>set relativenumber!<CR><Bar><Cmd>set relativenumber?<CR>
 nnoremap <silent> cos <Cmd>set spell!<CR><Bar><Cmd>set spell?<CR>
 nnoremap <silent> cow <Cmd>set wrap!<CR><Bar><Cmd>set wrap?<CR>
+nnoremap <silent> cof <Cmd>set foldmethod?<CR>
 
 " search highlight
 nnoremap <leader><C-l> :set hlsearch!<CR>
@@ -40,3 +41,4 @@ nnoremap <leader><C-l> :set hlsearch!<CR>
 " system clipboard
 nnoremap <leader>YG gg"+yG
 
+nnoremap <leader>sv :source $MYVIMRC<CR>

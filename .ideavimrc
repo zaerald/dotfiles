@@ -225,4 +225,5 @@ map <leader><C-q> <Action>(CloseProject)
 map <leader><C-s-q> <Action>(CloseOtherProjects)
 
 " others
+map <leader>MM <Action>(meme.machine)
 map <leader>MD <Action>(zd.zero.waifu.motivator.plugin.actions.ShowWaifuOfTheDayAction)

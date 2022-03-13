@@ -58,6 +58,7 @@ Plug 'sbdchd/neoformat'
 Plug 'junegunn/goyo.vim'
 Plug 'mhinz/vim-rfc'
 Plug 'kyazdani42/nvim-web-devicons'
+Plug 'christoomey/vim-tmux-navigator'
 
 call plug#end()
 

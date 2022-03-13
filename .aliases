@@ -59,6 +59,7 @@ fi
 alias k=kubectl
 alias rr='ranger --choosedir=$HOME/.rangerdir; RANGER_LAST_DIR=`cat $HOME/.rangerdir`; cd "$RANGER_LAST_DIR"'
 alias dk=docker
+alias cl=clear
 
 # dotfiles setup bare git
 alias dtf='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'

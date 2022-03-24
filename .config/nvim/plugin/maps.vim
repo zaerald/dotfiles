@@ -28,9 +28,6 @@ nnoremap <silent> <leader>xs <Cmd>.w !$SHELL<CR>
 xnoremap <silent> <leader>xs <Cmd>.w !$SHELL<CR>
 nnoremap <silent> <leader>xS <Cmd>w !$SHELL<CR>
 
-" create dirs for current buffer
-nnoremap <leader>M <Cmd>!mkdir -p %:h<CR>
-
 " toggles
 nnoremap <silent> col <Cmd>set list!<CR><Bar><Cmd>set list?<CR>
 nnoremap <silent> cor <Cmd>set relativenumber!<CR><Bar><Cmd>set relativenumber?<CR>

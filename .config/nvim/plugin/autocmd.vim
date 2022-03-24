@@ -11,5 +11,8 @@ if has("autocmd")
 
   autocmd BufNewFile,BufRead,BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
   autocmd BufNewFile,BufRead,BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
+  
+  " write file with parent dirs
+  autocmd BufWritePre,FileWritePre * silent! call mkdir(expand('<afile>:p:h'), 'p')
 endif
 

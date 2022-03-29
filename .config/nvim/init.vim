@@ -33,6 +33,7 @@ Plug 'nvim-treesitter/nvim-treesitter-textobjects'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'hashivim/vim-terraform'
 
 Plug 'tpope/vim-commentary'
 Plug 'JoosepAlviste/nvim-ts-context-commentstring'

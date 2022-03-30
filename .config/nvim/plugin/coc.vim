@@ -122,7 +122,7 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 " do default action for previous item.
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " resume latest coc list.
-nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>e
+nnoremap <silent><nowait> <space>R  :<C-u>CocListResume<CR>e
 
 " servers
 let g:coc_global_extensions = [

@@ -36,7 +36,8 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'hashivim/vim-terraform'
 
 Plug 'godlygeek/tabular'
-Plug 'preservim/vim-markdown'
+Plug 'dhruvasagar/vim-table-mode'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npm install'  }
 
 Plug 'tpope/vim-commentary'
 Plug 'JoosepAlviste/nvim-ts-context-commentstring'
@@ -49,7 +50,6 @@ Plug 'mbbill/undotree'
 Plug 'tyru/open-browser.vim'
 Plug 'Raimondi/delimitMate'
 Plug 'vim-utils/vim-man'
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npm install'  }
 Plug 'SirVer/ultisnips'
 Plug 'sindrets/diffview.nvim'
 Plug 'easymotion/vim-easymotion'

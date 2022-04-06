@@ -39,5 +39,9 @@ nnoremap <silent> cof <Cmd>set foldmethod?<CR>
 " system clipboard
 nnoremap <leader>YG gg"+yG
 
+" refresh syntax highlights
+noremap <F12> <Esc>:syntax sync fromstart<CR>
+inoremap <F12> <C-o>:syntax sync fromstart<CR>
+
 nnoremap <leader>sv :source $MYVIMRC<CR>
 

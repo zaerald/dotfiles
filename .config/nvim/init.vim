@@ -8,8 +8,9 @@ syntax enable
 call plug#begin(stdpath('data') . '/plugged')
 
 " color schemes
-Plug 'ellisonleao/gruvbox.nvim'
+Plug 'sainnhe/gruvbox-material'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'mhinz/vim-startify'

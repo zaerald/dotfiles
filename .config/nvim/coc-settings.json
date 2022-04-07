@@ -1,9 +1,10 @@
 {
+  "coc.preferences.formatOnSaveFiletypes": ["go"],
   "languageserver": {
     "sql": {
       "command": "sql-language-server",
-      "args": [ "up", "--method", "stdio" ],
-      "filetypes": [ "sql", "mysql" ]
+      "args": ["up", "--method", "stdio"],
+      "filetypes": ["sql", "mysql"]
     },
     "dockerfile": {
       "command": "docker-langserver",
@@ -13,13 +14,17 @@
     "terraform": {
       "command": "terraform-ls",
       "args": ["serve"],
-      "filetypes": [
-        "terraform",
-        "tf"
-      ],
+      "filetypes": ["terraform", "tf"],
       "initializationOptions": {},
       "settings": {}
+    },
+    "golang": {
+      "command": "gopls",
+      "rootPatterns": ["go.work", "go.mod", ".vim/", ".git/", ".hg/"],
+      "filetypes": ["go"],
+      "initializationOptions": {
+        "completeUnimported": true
+      }
     }
   }
 }
-

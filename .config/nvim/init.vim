@@ -31,9 +31,9 @@ Plug 'vwxyutarooo/nerdtree-devicons-syntax'
 " lsp and langs
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-treesitter/nvim-treesitter-textobjects'
+Plug 'sheerun/vim-polyglot'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'hashivim/vim-terraform'
 
 Plug 'godlygeek/tabular'

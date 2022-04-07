@@ -128,7 +128,6 @@ nnoremap <silent><nowait> <space>R  :<C-u>CocListResume<CR>e
 let g:coc_global_extensions = [
   \   'coc-css'
   \ , 'coc-eslint'
-  \ , 'coc-go'
   \ , 'coc-highlight'
   \ , 'coc-html'
   \ , 'coc-json'

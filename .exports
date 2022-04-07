@@ -14,7 +14,7 @@ export JAVA_HOME="$(jenv prefix)"
 eval "$(jenv init -)"
 
 export GOPATH=~/go
-
+export PATH="$GOPATH/bin:$PATH"
 # gnu
 if which brew > /dev/null 2>&1; then
   BREW_PREFIX="/usr/local"

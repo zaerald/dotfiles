@@ -28,6 +28,9 @@ cmap w!! w !sudo tee > /dev/null %
 nnoremap <silent> <leader>xs :.w !$SHELL<CR>
 xnoremap <silent> <leader>xs :.w !$SHELL<CR>
 nnoremap <silent> <leader>xS :w !$SHELL<CR>
+
+" filetypes
+nnoremap <silent> <leader>, :set filetype=
 nnoremap <silent> <leader>xf :set filetype=sh<CR>
 
 " toggles

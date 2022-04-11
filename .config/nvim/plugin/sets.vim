@@ -42,7 +42,8 @@ set cmdheight=1 " give more space for messages
 set signcolumn=yes
 set updatetime=50
 " status lines
-set laststatus=2 " always display the status bar
+" always display the global status bar
+set laststatus=3
 
 " -- code folding options --
 set foldmethod=manual

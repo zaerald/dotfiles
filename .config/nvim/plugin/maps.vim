@@ -1,5 +1,6 @@
 nnoremap <C-c> <Esc>
 nnoremap <leader>q :q!
+nnoremap <leader>Q :qa!
 nnoremap <leader>w :w<CR>
 
 nnoremap <leader>h <Cmd>wincmd h<CR>
@@ -24,9 +25,10 @@ nnoremap <silent> <leader>bo :w <bar> %bd <bar> e# <bar> bd# <CR><CR>
 cmap w!! w !sudo tee > /dev/null %
 
 " write to shell
-nnoremap <silent> <leader>xs <Cmd>.w !$SHELL<CR>
-xnoremap <silent> <leader>xs <Cmd>.w !$SHELL<CR>
-nnoremap <silent> <leader>xS <Cmd>w !$SHELL<CR>
+nnoremap <silent> <leader>xs :.w !$SHELL<CR>
+xnoremap <silent> <leader>xs :.w !$SHELL<CR>
+nnoremap <silent> <leader>xS :w !$SHELL<CR>
+nnoremap <silent> <leader>xf :set filetype=sh<CR>
 
 " toggles
 nnoremap <silent> col <Cmd>set list!<CR><Bar><Cmd>set list?<CR>

@@ -42,6 +42,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npm install'  }
 
 Plug 'tpope/vim-commentary'
 Plug 'JoosepAlviste/nvim-ts-context-commentstring'
+Plug 'mattn/emmet-vim'
 
 " utils
 Plug 'tpope/vim-repeat'

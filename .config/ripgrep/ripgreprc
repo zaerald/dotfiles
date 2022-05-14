@@ -1,0 +1,8 @@
+--max-columns=150
+--max-columns-preview
+--hidden
+--ignore-case
+
+--glob=!git/*
+--glob=!.git/*
+

@@ -51,3 +51,14 @@ fi
 unset vimplugin
 ```
 
+## Brew
+Generate bundle
+```
+rm -rf $HOME/.Brewfile; brew bundle dump --describe --global
+```
+
+Install bundle
+```
+brew bundle install --global
+```
+

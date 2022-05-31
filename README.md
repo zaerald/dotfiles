@@ -8,6 +8,14 @@ dtf config --local status.showUntrackedFiles no
 dtf reset --hard HEAD
 ```
 
+### Prerequisites
+
+- [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
+- [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
+- [powerlevel10k](https://github.com/romkatv/powerlevel10k)
+- [tpm](https://github.com/tmux-plugins/tpm)
+- [vim-plug](https://github.com/junegunn/vim-plug)
+
 ### Update `git` configuration
 
 ```

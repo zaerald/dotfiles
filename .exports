@@ -1,20 +1,23 @@
 #!/bin/bash
 
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 # make neovim the default editor.
 if which nvim > /dev/null 2>&1; then
   export EDITOR='nvim';
   export VISUAL='nvim';
 fi
-export TERM=xterm-256color
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
 
 # jenv
-export JAVA_HOME="$(jenv prefix)"
-eval "$(jenv init -)"
+if which jenv > /dev/null 2>&1; then
+  export JAVA_HOME="$(jenv prefix)"
+  eval "$(jenv init -)"
+fi
 
 export GOPATH=~/go
 export PATH="$GOPATH/bin:$PATH"
+
 # gnu
 if which brew > /dev/null 2>&1; then
   BREW_PREFIX="/usr/local"

@@ -2,8 +2,8 @@
 
 ## Setup
 ```
-git clone --bare $DOTFILES_REPO_URL $HOME/dotfiles
-alias dtf='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+git clone --bare $DOTFILES_REPO_URL $HOME/.dotfiles
+alias dtf='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 dtf config --local status.showUntrackedFiles no
 dtf reset --hard HEAD
 ```

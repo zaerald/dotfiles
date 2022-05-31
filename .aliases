@@ -61,5 +61,5 @@ alias dk=docker
 alias cl=clear
 
 # dotfiles setup bare git
-alias dtf='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+alias dtf='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 

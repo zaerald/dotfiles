@@ -30,17 +30,6 @@ dtf commit -m "message"
 dtf push
 ```
 
-## Brew
-Generate bundle
-```
-rm -rf $HOME/.Brewfile; brew bundle dump --describe --global
-```
-
-Install bundle
-```
-brew bundle install --global
-```
-
 ## Vim
 ### Plugin Manager
 - [vim-plug](https://github.com/junegunn/vim-plug)

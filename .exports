@@ -3,7 +3,7 @@
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-# make neovim the default editor.
+# make neovim the default editor
 if which nvim > /dev/null 2>&1; then
   export EDITOR='nvim';
   export VISUAL='nvim';
@@ -17,12 +17,4 @@ fi
 
 export GOPATH=~/go
 export PATH="$GOPATH/bin:$PATH"
-
-# gnu
-if which brew > /dev/null 2>&1; then
-  BREW_PREFIX="/usr/local"
-  PATH="$BREW_PREFIX/opt/gnu-sed/libexec/gnubin:$PATH"
-  PATH="$BREW_PREFIX/opt/grep/libexec/gnubin:$PATH"
-  PATH="$BREW_PREFIX/opt/gnu-tar/libexec/gnubin:$PATH"
-fi
 

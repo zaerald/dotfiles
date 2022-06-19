@@ -4,6 +4,7 @@
 
 [core]
   editor = "$(which nvim)"
+  pager = diff-so-fancy | less --tabs=4 -RFX
 
 [alias]
   a = add
@@ -53,4 +54,7 @@
 
 [init]
   defaultBranch = main
+
+[interactive]
+  diffFilter = diff-so-fancy --patch
 

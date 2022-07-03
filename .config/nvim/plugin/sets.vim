@@ -46,7 +46,8 @@ set updatetime=50
 set laststatus=3
 
 " -- code folding options --
-set foldmethod=manual
+set foldmethod=expr
+set foldexpr=nvim_treesitter#foldexpr()
 set nofoldenable
 
 " -- misc --

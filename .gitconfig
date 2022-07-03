@@ -38,6 +38,10 @@
   rbo = rebase --onto
   t = tag
   ts = tag -l
+  wt = worktree
+  wtl = worktree list
+  wta = worktree add
+  wtr = worktree remove
   sq = "!f() { git reset HEAD~$1; }; f"
   sqb = "!f() { git reset HEAD~$(git rev-list --count $1..HEAD); }; f"
   rlc = "!f() { git rev-list --count $1..HEAD; }; f"

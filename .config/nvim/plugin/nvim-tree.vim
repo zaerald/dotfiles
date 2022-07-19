@@ -1,15 +1,17 @@
 nnoremap <C-n> :NvimTreeFocus<CR>
 nnoremap <leader><C-f> :NvimTreeFindFile<CR>
 nnoremap <leader><C-t> :NvimTreeToggle<CR>
-nnoremap <leader><C-r> :NvimTreeRefresh<CR>
-nnoremap <leader><F4> :NvimTreeCollapse<CR>
 
 lua << EOF
 require("nvim-tree").setup {
+  auto_reload_on_write = false,
   view = {
-    relativenumber = false
+    number = true,
+    relativenumber = true,
+    width = 50
   },
   renderer = {
+    highlight_opened_files = "all",
     icons = {
       show = {
         folder_arrow = false
@@ -18,6 +20,11 @@ require("nvim-tree").setup {
   },
   diagnostics = {
     enable = true
+  },
+  actions = {
+    expand_all = {
+      max_folder_discovery = 5
+    }
   }
 }
 EOF

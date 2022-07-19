@@ -3,10 +3,6 @@ nnoremap <leader>q :q!
 nnoremap <leader>Q :qa!
 nnoremap <leader>w :w<CR>
 
-nnoremap <leader>h <Cmd>wincmd h<CR>
-nnoremap <leader>j <Cmd>wincmd j<CR>
-nnoremap <leader>k <Cmd>wincmd k<CR>
-nnoremap <leader>l <Cmd>wincmd l<CR>
 nnoremap <silent> <Leader>+ :vertical resize +5<CR>
 nnoremap <silent> <Leader>- :vertical resize -5<CR>
 

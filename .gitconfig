@@ -1,6 +1,8 @@
-[user]
-  name = zaerald
-  email = zaerald.zd@gmail.com
+[init]
+    defaultBranch = main
+
+[include]
+    path = ~/.gitconfig-local
 
 [core]
   editor = "$(which nvim)"
@@ -11,7 +13,7 @@
   aa = add .
   cm = commit -m
   cmw = "!f() { git add . && git commit -m 'wip'; }; f"
-  s = status -s
+  s = status --short --branch
   st = status
   dino = diff --name-only
   co = checkout
@@ -42,6 +44,7 @@
   wtl = worktree list
   wta = worktree add
   wtr = worktree remove
+  wtp = worktree prune
   sq = "!f() { git reset HEAD~$1; }; f"
   sqb = "!f() { git reset HEAD~$(git rev-list --count $1..HEAD); }; f"
   rlc = "!f() { git rev-list --count $1..HEAD; }; f"

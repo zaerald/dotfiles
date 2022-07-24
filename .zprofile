@@ -5,13 +5,9 @@ for file in ~/.{exports,functions,extra}; do
 done;
 unset file;
 
-# nvm-sh
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-alias nvm="unalias nvm; [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"; nvm $@"
-
 # fnm
 eval "$(fnm env --use-on-cd)"
 
+# brew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 

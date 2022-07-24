@@ -15,5 +15,6 @@ if which tmuxifier > /dev/null 2>&1; then
   eval "$(tmuxifier init -)"
 fi
 
+# brew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 

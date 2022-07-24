@@ -27,3 +27,6 @@ if which brew > /dev/null 2>&1; then
   PATH="$BREW_PREFIX/opt/gnu-tar/libexec/gnubin:$PATH"
 fi
 
+# python
+export PATH="/Library/Frameworks/Python.framework/Versions/3.10/bin:${PATH}"
+

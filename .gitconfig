@@ -1,8 +1,5 @@
-[init]
-    defaultBranch = main
-
 [include]
-    path = ~/.gitconfig-local
+  path = ~/.gitconfig-local
 
 [core]
   editor = "$(which nvim)"
@@ -15,6 +12,8 @@
   cmw = "!f() { git add . && git commit -m 'wip'; }; f"
   s = status --short --branch
   st = status
+  d = diff
+  dh = diff HEAD
   dino = diff --name-only
   co = checkout
   cb = checkout -b

@@ -1,6 +1,5 @@
-nnoremap <C-n> :NvimTreeFocus<CR>
+nnoremap <C-n> :NvimTreeToggle<CR>
 nnoremap <leader><C-f> :NvimTreeFindFile<CR>
-nnoremap <leader><C-t> :NvimTreeToggle<CR>
 
 lua << EOF
 require("nvim-tree").setup {

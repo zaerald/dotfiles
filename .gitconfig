@@ -44,6 +44,7 @@
   wta = worktree add
   wtr = worktree remove
   wtp = worktree prune
+  cl = clone
   sq = "!f() { git reset HEAD~$1; }; f"
   sqb = "!f() { git reset HEAD~$(git rev-list --count $1..HEAD); }; f"
   rlc = "!f() { git rev-list --count $1..HEAD; }; f"

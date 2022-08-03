@@ -16,6 +16,7 @@ brew install tmux
 
 brew install diff-so-fancy
 brew install fd
+brew install rclone
 brew install ripgrep
 
 # neovim

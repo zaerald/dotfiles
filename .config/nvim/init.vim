@@ -2,6 +2,7 @@ set encoding=utf-8
 scriptencoding utf-8
 let mapleader=" "
 syntax enable
+filetype plugin on
 
 " -- plugins --
 " initialize vim-plug
@@ -57,6 +58,7 @@ Plug 'tommcdo/vim-exchange'
 Plug 'andymass/vim-matchup'
 Plug 'machakann/vim-highlightedyank'
 Plug 'ferrine/md-img-paste.vim'
+Plug 'vimwiki/vimwiki'
 
 " misc
 Plug 'sbdchd/neoformat'

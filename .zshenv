@@ -1,2 +1,3 @@
+source ~/.exports
 source ~/.aliases
 

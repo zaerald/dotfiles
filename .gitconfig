@@ -20,7 +20,8 @@
   b = branch
   br = branch -r
   bn = branch --show-current
-  bb = branch --show-branch
+  bd = branch -d
+  bD = branch -D
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
   l = log --pretty=oneline -n 20 --graph --abbrev-commit
   lo = log --oneline

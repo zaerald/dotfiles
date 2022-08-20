@@ -55,6 +55,8 @@ if which nvim > /dev/null 2>&1; then
   alias vim=nvim
 fi
 
+# programs
+alias g=git
 alias k=kubectl
 alias rr='ranger --choosedir=$HOME/.rangerdir; RANGER_LAST_DIR=`cat $HOME/.rangerdir`; cd "$RANGER_LAST_DIR"'
 alias dk=docker

@@ -9,7 +9,7 @@
   a = add
   aa = add .
   cm = commit -m
-  cmw = "!f() { git add . && git commit -m 'wip'; }; f"
+  cmw = "!f() { git add . && git commit -m "$(git branch --show-current)"; }; f"
   s = status --short --branch
   st = status
   d = diff

@@ -15,6 +15,7 @@ brew install ranger
 brew install tmux
 
 brew install diff-so-fancy
+brew install exiftool
 brew install fd
 brew install gpg
 brew install pnpm

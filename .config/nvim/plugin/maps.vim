@@ -34,9 +34,14 @@ nnoremap <silent> cof <Cmd>set foldmethod?<CR>
 " system clipboard
 nnoremap <leader>YG gg"+yG
 
+nnoremap <leader>yf <Cmd>let @+=expand("%:t")<CR>
+nnoremap <leader>yp <Cmd>let @+=expand("%")<CR>
+nnoremap <leader>yP <Cmd>let @+=expand("%:p")<CR>
+nnoremap <leader>yd <Cmd>let @+=expand("%:h")<CR>
+nnoremap <leader>yD <Cmd>let @+=expand("%:p:h")<CR>
+
 " refresh syntax highlights
 noremap <F12> <Esc>:syntax sync fromstart<CR>
 inoremap <F12> <C-o>:syntax sync fromstart<CR>
 
 nnoremap <leader>sv :source $MYVIMRC<CR>
-

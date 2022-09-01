@@ -5,7 +5,8 @@ endif
 lua << EOF
 require("telescope").setup {
   defaults = {
-    path_display = { "truncate" }
+    path_display = { "truncate" },
+    layout_strategy = "vertical",
   },
   pickers = {
     buffers = {
@@ -15,7 +16,7 @@ require("telescope").setup {
       previewer = false,
       mappings = {
         i = {
-          ["<c-q>"] = "delete_buffer",
+          ["<c-x>"] = "delete_buffer",
         }
       }
     }
@@ -33,4 +34,6 @@ nnoremap <leader>fu <cmd>Telescope buffers<cr>
 nnoremap <leader>fo <cmd>Telescope oldfiles<cr>
 nnoremap <leader>ft <cmd>Telescope git_commits<cr>
 nnoremap <leader>fr <cmd>Telescope git_branches<cr>
+
+autocmd User TelescopePreviewerLoaded setlocal wrap
 

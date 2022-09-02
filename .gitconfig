@@ -25,6 +25,8 @@
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
   l = log --pretty=oneline -n 20 --graph --abbrev-commit
   lo = log --oneline
+  lof = log --oneline --follow
+  lofp = log --oneline --follow -p
   ca = commit --amend
   can = commit --amend --no-edit
   ch = cherry

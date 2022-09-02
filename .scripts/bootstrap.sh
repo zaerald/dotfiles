@@ -1,5 +1,20 @@
 #!/bin/bash
 
+# tools
+brew install ranger
+brew install tmux
+brew install koekeishiya/formulae/yabai
+
+brew install htop
+brew install diff-so-fancy
+brew install exiftool
+brew install fd
+brew install gpg
+brew install jesseduffield/lazygit/lazygit
+brew install pnpm
+brew install rclone
+brew install ripgrep
+
 # langs
 brew install go
 brew install node
@@ -8,19 +23,6 @@ brew install perl
 # version managers
 brew install jenv
 brew install nvm
-
-# tools
-brew install htop
-brew install ranger
-brew install tmux
-
-brew install diff-so-fancy
-brew install exiftool
-brew install fd
-brew install gpg
-brew install pnpm
-brew install rclone
-brew install ripgrep
 
 # neovim
 brew install ninja libtool automake cmake pkg-config gettext curl

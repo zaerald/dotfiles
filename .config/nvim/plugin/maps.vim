@@ -6,6 +6,10 @@ nnoremap <leader>w :w<CR>
 nnoremap <silent> <Leader>+ :vertical resize +5<CR>
 nnoremap <silent> <Leader>- :vertical resize -5<CR>
 
+" navigation
+nnoremap H zH
+nnoremap L zL
+
 " insert lines without insert mode
 nnoremap o o<Esc>
 nnoremap O O<Esc>

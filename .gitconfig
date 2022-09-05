@@ -37,6 +37,8 @@
   pfl = push --force-with-lease
   pu = push -u origin HEAD
   pl = pull
+  f = fetch
+  fa = fetch --all
   rhh = reset --hard HEAD
   rb = rebase
   rbo = rebase --onto

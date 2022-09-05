@@ -33,8 +33,8 @@
   chv = cherry -v
   chp = cherry-pick
   p = push
-  pf = push -f
-  pfl = push --force-with-lease
+  pf = push --force-with-lease
+  pff = push -f
   pu = push -u origin HEAD
   pl = pull
   f = fetch

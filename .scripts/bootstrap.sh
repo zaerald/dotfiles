@@ -44,6 +44,7 @@ brew install --cask google-chrome
 brew install --cask intellij-idea-ce
 brew install --cask iterm2
 brew install --cask itsycal
+brew install --cask karabiner-elements
 brew install --cask keka
 brew install --cask keycastr
 brew install --cask notion

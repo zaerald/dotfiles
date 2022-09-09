@@ -32,6 +32,7 @@ brew install tree-sitter
 brew install neofetch
 
 ## applications ##
+brew install --cask aldente
 brew install --cask alfred
 brew install --cask anki
 brew install --cask arduino

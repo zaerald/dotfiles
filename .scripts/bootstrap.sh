@@ -5,12 +5,14 @@ brew install ranger
 brew install tmux
 brew install koekeishiya/formulae/yabai
 
-brew install htop
 brew install diff-so-fancy
 brew install exiftool
 brew install fd
 brew install gpg
+brew install htop
 brew install jesseduffield/lazygit/lazygit
+brew install jo
+brew install jq
 brew install pnpm
 brew install rclone
 brew install ripgrep

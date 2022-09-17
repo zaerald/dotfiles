@@ -217,7 +217,7 @@ map <leader>wG <Action>(Vcs.ShowTabbedFileHistory)
 " window layout
 map <leader>xf <Action>(ToggleDistractionFreeMode)
 map <leader>xx <Action>(HideAllWindows)
-map <C-x> <Action>(HideAllWindows)
+map <C-n> <Action>(HideAllWindows)
 map <leader>xc <Action>(HideAllWindows)<bar> <Action>(SelectInProjectView)<bar> <Action>(FocusEditor)
 
 " windows navigation

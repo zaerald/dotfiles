@@ -5,6 +5,7 @@ brew install ranger
 brew install tmux
 brew install koekeishiya/formulae/yabai
 
+brew install awscli
 brew install diff-so-fancy
 brew install exiftool
 brew install fd

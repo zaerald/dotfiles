@@ -61,6 +61,8 @@ alias lg=lazygit
 alias k=kubectl
 alias rr='ranger --choosedir=$HOME/.rangerdir; RANGER_LAST_DIR=`cat $HOME/.rangerdir`; cd "$RANGER_LAST_DIR"'
 alias dk=docker
+alias python=python3
+alias cdk='npx aws-cdk'
 alias cl=clear
 
 # dotfiles setup bare git

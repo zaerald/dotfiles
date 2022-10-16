@@ -17,6 +17,7 @@ brew install jq
 brew install pnpm
 brew install rclone
 brew install ripgrep
+brew install bat
 
 # langs
 brew install go

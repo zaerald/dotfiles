@@ -45,6 +45,7 @@ brew install --cask dbeaver-community
 brew install --cask discord
 brew install --cask docker
 brew install --cask firefox
+brew install --cask gns3
 brew install --cask google-chrome
 brew install --cask intellij-idea-ce
 brew install --cask iterm2
@@ -60,4 +61,5 @@ brew install --cask skim
 brew install --cask spotify
 brew install --cask todoist
 brew install --cask vlc
+brew install --cask wireshark
 

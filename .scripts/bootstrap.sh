@@ -6,9 +6,11 @@ brew install tmux
 brew install koekeishiya/formulae/yabai
 
 brew install awscli
+brew install bat
 brew install diff-so-fancy
 brew install exiftool
 brew install fd
+brew install fnm
 brew install gpg
 brew install htop
 brew install jesseduffield/lazygit/lazygit
@@ -17,7 +19,6 @@ brew install jq
 brew install pnpm
 brew install rclone
 brew install ripgrep
-brew install bat
 
 # langs
 brew install go

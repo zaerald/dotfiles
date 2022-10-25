@@ -11,7 +11,6 @@ eval "$(fnm env --use-on-cd)"
 # brew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# nvm
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+# fnm
+eval "$(fnm env --use-on-cd)"
 

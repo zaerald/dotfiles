@@ -49,6 +49,7 @@ yabai -m config                                 \
 yabai -m rule --add app="^System Preferences$" manage=off
 yabai -m rule --add label="Software Update" title="Software Update" manage=off
 yabai -m rule --add label="About This Mac" app="System Information" title="About This Mac" manage=off
+yabai -m rule --add label="Displays" app="System Information" title="Displays" manage=off
 yabai -m rule --add label="App Store" app="^App Store$" manage=off
 yabai -m rule --add label="Activity Monitor" app="^Activity Monitor$" manage=off
 yabai -m rule --add app="^Archive Utility$" manage=off

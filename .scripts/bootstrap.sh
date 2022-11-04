@@ -4,6 +4,7 @@
 brew install ranger
 brew install tmux
 brew install koekeishiya/formulae/yabai
+brew install koekeishiya/formulae/skhd
 
 brew install awscli
 brew install bat

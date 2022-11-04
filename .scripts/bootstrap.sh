@@ -57,9 +57,9 @@ brew install --cask keka
 brew install --cask keycastr
 brew install --cask notion
 brew install --cask postman
-brew install --cask rectangle
 brew install --cask remnote
 brew install --cask skim
+brew install --cask spacelauncher
 brew install --cask spotify
 brew install --cask todoist
 brew install --cask vlc

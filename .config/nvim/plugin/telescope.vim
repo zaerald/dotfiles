@@ -29,6 +29,7 @@ lua require'telescope'.load_extension('fzy_native')
 " - telescope
 nnoremap <C-p> <cmd>Telescope find_files find_command=rg,--files,--ignore,--hidden,--glob=!.git/* prompt_prefix=🔍<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fe <cmd>Telescope resume<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 nnoremap <leader>fu <cmd>Telescope buffers<cr>
 nnoremap <leader>fo <cmd>Telescope oldfiles<cr>

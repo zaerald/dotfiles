@@ -167,6 +167,7 @@ alt - r : yabai -m space --rotate 90
 
 # toggle window fullscreen zoom
 alt - f : yabai -m window --toggle zoom-fullscreen
+shift + alt - f : yabai -m window --toggle native-fullscreen
 
 # toggle padding and gap
 alt - g : yabai -m space --toggle padding; yabai -m space --toggle gap
@@ -205,13 +206,6 @@ alt - 0 : yabai -m space --focus recent
 shift + alt - n : yabai -m window --display next; yabai -m display --focus next
 shift + alt - p : yabai -m window --display previous; yabai -m display --focus previous
 
-# increase window size
-shift + alt - w : yabai -m window --resize top:0:-20
-shift + alt - d : yabai -m window --resize left:-20:0
-
-# decrease window size
-shift + alt - s : yabai -m window --resize bottom:0:-20
-shift + alt - a : yabai -m window --resize top:0:20
 # focus window
 alt - h : yabai -m window --focus west
 alt - j : yabai -m window --focus south
@@ -278,4 +272,7 @@ ctrl + cmd - h : yabai -m window west --resize right:-60:0 2> /dev/null || yabai
 ctrl + cmd - j : yabai -m window north --resize bottom:0:60 2> /dev/null || yabai -m window --resize bottom:0:60
 ctrl + cmd - k : yabai -m window south --resize top:0:-60 2> /dev/null || yabai -m window --resize top:0:-60
 ctrl + cmd - l : yabai -m window east --resize left:60:0 2> /dev/null || yabai -m window --resize left:60:0
+
+shift + alt - c : yabai -m config left_padding 600; yabai -m config right_padding 600
+shift + alt - d : yabai -m config left_padding 12; yabai -m config right_padding 12
 

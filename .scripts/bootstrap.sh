@@ -62,6 +62,7 @@ brew install --cask skim
 brew install --cask spacelauncher
 brew install --cask spotify
 brew install --cask todoist
+brew install --cask ubersicht
 brew install --cask vlc
 brew install --cask wireshark
 

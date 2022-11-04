@@ -38,6 +38,7 @@ brew install tree-sitter
 brew install neofetch
 
 ## applications ##
+brew install --cask alacritty
 brew install --cask aldente
 brew install --cask alfred
 brew install --cask anki
@@ -50,7 +51,6 @@ brew install --cask firefox
 brew install --cask gns3
 brew install --cask google-chrome
 brew install --cask intellij-idea-ce
-brew install --cask iterm2
 brew install --cask itsycal
 brew install --cask karabiner-elements
 brew install --cask keka

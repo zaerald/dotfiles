@@ -17,6 +17,7 @@ brew install htop
 brew install jesseduffield/lazygit/lazygit
 brew install jo
 brew install jq
+brew install mpv
 brew install pnpm
 brew install rclone
 brew install ripgrep

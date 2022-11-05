@@ -277,10 +277,10 @@ shift + alt - n : yabai -m window --display next; yabai -m display --focus next
 shift + alt - p : yabai -m window --display previous; yabai -m display --focus previous
 
 # window resize
-ctrl + cmd - h : yabai -m window west --resize right:-60:0 2> /dev/null || yabai -m window --resize right:-60:0
-ctrl + cmd - j : yabai -m window north --resize bottom:0:60 2> /dev/null || yabai -m window --resize bottom:0:60
-ctrl + cmd - k : yabai -m window south --resize top:0:-60 2> /dev/null || yabai -m window --resize top:0:-60
-ctrl + cmd - l : yabai -m window east --resize left:60:0 2> /dev/null || yabai -m window --resize left:60:0
+ctrl + cmd - h : yabai -m window west --resize right:-100:0 2> /dev/null || yabai -m window --resize right:-100:0
+ctrl + cmd - j : yabai -m window north --resize bottom:0:100 2> /dev/null || yabai -m window --resize bottom:0:100
+ctrl + cmd - k : yabai -m window south --resize top:0:-100 2> /dev/null || yabai -m window --resize top:0:-100
+ctrl + cmd - l : yabai -m window east --resize left:100:0 2> /dev/null || yabai -m window --resize left:100:0
 
 shift + alt - c : yabai -m config left_padding 600; yabai -m config right_padding 600
 shift + alt - d : yabai -m config left_padding 12; yabai -m config right_padding 12

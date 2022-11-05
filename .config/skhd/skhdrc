@@ -233,6 +233,9 @@ alt - f : yabai -m window --toggle zoom-fullscreen
 # toggle padding and gap
 alt - g : yabai -m space --toggle padding; yabai -m space --toggle gap
 
+# toggle border
+alt - b : yabai -m window --toggle border
+
 # float / unfloat window and center on screen
 alt - t : yabai -m window --toggle float;\
           yabai -m window --grid 4:4:1:1:2:2
@@ -282,6 +285,16 @@ ctrl + cmd - j : yabai -m window north --resize bottom:0:100 2> /dev/null || yab
 ctrl + cmd - k : yabai -m window south --resize top:0:-100 2> /dev/null || yabai -m window --resize top:0:-100
 ctrl + cmd - l : yabai -m window east --resize left:100:0 2> /dev/null || yabai -m window --resize left:100:0
 
+# center
 shift + alt - c : yabai -m config left_padding 600; yabai -m config right_padding 600
 shift + alt - d : yabai -m config left_padding 12; yabai -m config right_padding 12
 
+# stacks
+shift + cmd - h : yabai -m window --stack west
+shift + cmd - j : yabai -m window --stack south
+shift + cmd - k : yabai -m window --stack north
+shift + cmd - l : yabai -m window --stack east
+
+shift + cmd - p : yabai -m window --focus stack.prev
+shift + cmd - n : yabai -m window --focus stack.next
+shift + cmd - o : yabai -m window --focus stack.recent

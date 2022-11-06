@@ -289,14 +289,5 @@ ctrl + cmd - l : yabai -m window east --resize left:100:0 2> /dev/null || yabai 
 
 # center
 shift + alt - c : yabai -m config left_padding 600; yabai -m config right_padding 600
-shift + alt - d : yabai -m config left_padding 12; yabai -m config right_padding 12
+shift + alt + ctrl - c : yabai -m config left_padding 12; yabai -m config right_padding 12
 
-# stacks
-shift + cmd - h : yabai -m window --stack west
-shift + cmd - j : yabai -m window --stack south
-shift + cmd - k : yabai -m window --stack north
-shift + cmd - l : yabai -m window --stack east
-
-shift + cmd - p : yabai -m window --focus stack.prev
-shift + cmd - n : yabai -m window --focus stack.next
-shift + cmd - o : yabai -m window --focus stack.recent

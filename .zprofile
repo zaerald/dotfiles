@@ -5,12 +5,11 @@ for file in ~/.{functions,extra}; do
 done;
 unset file;
 
-# fnm
-eval "$(fnm env --use-on-cd)"
-
 # brew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # fnm
-eval "$(fnm env --use-on-cd)"
+if which fnm > /dev/null 2>&1; then
+  eval "$(fnm env --use-on-cd)"
+fi
 

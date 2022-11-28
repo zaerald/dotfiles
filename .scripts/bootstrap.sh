@@ -1,42 +1,46 @@
 #!/bin/bash
 
 # tools
-brew install ranger
-brew install tmux
-brew install koekeishiya/formulae/yabai
-brew install koekeishiya/formulae/skhd
 
-brew install awscli
-brew install bat
-brew install diff-so-fancy
-brew install exiftool
+## commons-core
+brew install curl
 brew install fd
-brew install fnm
-brew install gpg
 brew install htop
-brew install jesseduffield/lazygit/lazygit
 brew install jo
 brew install jq
 brew install mpv
-brew install pnpm
-brew install rclone
+brew install ranger
 brew install ripgrep
+brew install tmux
+
+## commons-dev
+brew install awscli
+brew install bat
+brew install diff-so-fancy
+brew install gpg
+brew install jesseduffield/lazygit/lazygit
 
 # langs
+brew install cmake
 brew install go
 brew install node
 brew install perl
 
-# version managers
+## langs-tools
+brew install fnm
 brew install jenv
-brew install nvm
+brew install pnpm
 
 # neovim
-brew install ninja libtool automake cmake pkg-config gettext curl
+brew install ninja libtool automake pkg-config gettext
 brew install tree-sitter
 
 # misc
+brew install exiftool
+brew install koekeishiya/formulae/skhd
+brew install koekeishiya/formulae/yabai
 brew install neofetch
+brew install rclone
 
 ## applications ##
 brew install --cask alacritty
@@ -60,7 +64,6 @@ brew install --cask notion
 brew install --cask postman
 brew install --cask remnote
 brew install --cask skim
-brew install --cask spacelauncher
 brew install --cask spotify
 brew install --cask todoist
 brew install --cask ubersicht

@@ -39,7 +39,7 @@ yabai -m config                                 \
     left_padding                 12             \
     right_padding                12             \
     window_gap                   06             \
-    external_bar                 all:25:0       \
+    external_bar                 all:20:0       \
     layout                       bsp            \
     mouse_modifier               fn             \
     mouse_action1                move           \
@@ -56,7 +56,8 @@ yabai -m rule --add label="Activity Monitor" app="^Activity Monitor$" manage=off
 yabai -m rule --add app="^Archive Utility$" manage=off
 
 yabai -m rule --add app="^Alfred Preferences$" manage=off
-yabai -m rule --add app="^Spotify$" manage=off
 yabai -m rule --add app="^VLC$" manage=off
+yabai -m rule --add app="^PlayCover$" manage=off
+yabai -m rule --add app="^Genshin Impact$" manage=off
 
 echo "yabai configuration loaded.."

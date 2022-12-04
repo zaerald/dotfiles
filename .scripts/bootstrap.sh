@@ -20,6 +20,9 @@ brew install diff-so-fancy
 brew install gpg
 brew install jesseduffield/lazygit/lazygit
 
+## commons-specific
+brew install nmap
+
 # langs
 brew install cmake
 brew install go
@@ -48,6 +51,7 @@ brew install --cask aldente
 brew install --cask alfred
 brew install --cask anki
 brew install --cask arduino
+brew install --cask background-music
 brew install --cask calibre
 brew install --cask dbeaver-community
 brew install --cask discord

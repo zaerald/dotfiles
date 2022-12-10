@@ -60,6 +60,7 @@ Plug 'andymass/vim-matchup'
 Plug 'machakann/vim-highlightedyank'
 Plug 'ferrine/md-img-paste.vim'
 Plug 'vimwiki/vimwiki'
+Plug 'ThePrimeagen/harpoon'
 
 " misc
 Plug 'sbdchd/neoformat'

@@ -51,7 +51,6 @@ brew install --cask aldente
 brew install --cask alfred
 brew install --cask anki
 brew install --cask arduino
-brew install --cask background-music
 brew install --cask calibre
 brew install --cask dbeaver-community
 brew install --cask discord

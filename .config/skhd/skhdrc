@@ -238,10 +238,6 @@ shift + alt - b : yabai -m config window_border off
 alt - b : yabai -m config window_border on
 shift + alt + ctrl - b : yabai -m window --toggle border
 
-# float / unfloat window and center on screen
-alt - t : yabai -m window --toggle float;\
-          yabai -m window --grid 4:4:1:1:2:2
-
 # toggle window split type
 alt - e : yabai -m window --toggle split
 

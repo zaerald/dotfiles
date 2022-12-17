@@ -92,6 +92,7 @@ map <TAB> <Action>(NextTab)
 " tab manipulation
 map <leader><C-w>ch <Action>(CloseAllToTheLeft)
 map <leader><C-w>cl <Action>(CloseAllToTheRight)
+map <leader><C-w>co <Action>(CloseAllEditorsButActive)
 
 " TabMover(10131-tabmover) plugin actions
 map <leader><C-w>h <Action>(com.mnw.tabmover.actions.MoveTabUpAction)

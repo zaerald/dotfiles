@@ -12,7 +12,6 @@ call plug#begin(stdpath('data') . '/plugged')
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'ryanoasis/vim-devicons'
-Plug 'kyazdani42/nvim-web-devicons'
 Plug 'mhinz/vim-startify'
 Plug 'mhinz/vim-signify'
 Plug 'norcalli/nvim-colorizer.lua'
@@ -23,7 +22,6 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzy-native.nvim'
 
 " nvim-tree
-Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
 
 " lsp and langs
@@ -44,6 +42,9 @@ Plug 'tpope/vim-commentary'
 Plug 'JoosepAlviste/nvim-ts-context-commentstring'
 Plug 'mattn/emmet-vim'
 
+Plug 'L3MON4D3/LuaSnip', { 'tag': 'v1.1.0', 'do': 'make install_jsregexp' }
+Plug 'rafamadriz/friendly-snippets'
+
 " utils
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
@@ -52,7 +53,6 @@ Plug 'mbbill/undotree'
 Plug 'tyru/open-browser.vim'
 Plug 'Raimondi/delimitMate'
 Plug 'vim-utils/vim-man'
-Plug 'SirVer/ultisnips'
 Plug 'sindrets/diffview.nvim'
 Plug 'easymotion/vim-easymotion'
 Plug 'tommcdo/vim-exchange'

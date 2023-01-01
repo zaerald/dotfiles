@@ -1,5 +1,13 @@
-nnoremap <leader>hm :lua require("harpoon.mark").add_file()<cr>
-nnoremap <leader>hq :lua require("harpoon.ui").toggle_quick_menu()<cr>
+lua << EOF
+require("harpoon").setup({
+  menu = {
+    width = vim.api.nvim_win_get_width(0) - 20,
+  }
+})
+EOF
+
+nnoremap <leader>ha :lua require("harpoon.mark").add_file()<cr>
+nnoremap <C-m> :lua require("harpoon.ui").toggle_quick_menu()<cr>
 
 nnoremap <leader>h1 :lua require("harpoon.tmux").gotoTerminal(1) <cr>
 nnoremap <leader>h2 :lua require("harpoon.tmux").gotoTerminal(2) <cr>

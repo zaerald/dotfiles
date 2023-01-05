@@ -3,6 +3,10 @@ nnoremap <leader>q :q!
 nnoremap <leader>Q :qa!
 nnoremap <leader>w :w<CR>
 
+nnoremap Q <nop>
+
+nnoremap <leader>s :%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>
+
 nnoremap <silent> <Leader>+ :vertical resize +5<CR>
 nnoremap <silent> <Leader>- :vertical resize -5<CR>
 
@@ -11,6 +15,12 @@ nnoremap <C-d> <C-d>zz
 nnoremap <C-u> <C-u>zz
 nnoremap H zH
 nnoremap L zL
+nnoremap n nzzzv
+nnoremap N Nzzzv
+
+" move selected lines
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
 
 " insert lines without insert mode
 nnoremap o o<Esc>
@@ -49,6 +59,4 @@ nnoremap <leader>yD <Cmd>let @+=expand("%:p:h")<CR>
 " refresh syntax highlights
 noremap <F12> <Esc>:syntax sync fromstart<CR>
 inoremap <F12> <C-o>:syntax sync fromstart<CR>
-
-nnoremap <leader>sv :source $MYVIMRC<CR>
 

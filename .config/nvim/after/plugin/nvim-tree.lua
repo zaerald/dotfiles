@@ -1,7 +1,3 @@
-nnoremap <C-n> :NvimTreeToggle<CR>
-nnoremap <leader><C-f> :NvimTreeFindFile<CR>
-
-lua << EOF
 require("nvim-tree").setup {
   auto_reload_on_write = false,
   view = {
@@ -26,5 +22,7 @@ require("nvim-tree").setup {
     }
   }
 }
-EOF
+
+vim.keymap.set("n", "<C-n>", ":NvimTreeToggle<CR>")
+vim.keymap.set("n", "<leader><C-f>", ":NvimTreeFindFile<CR>")
 

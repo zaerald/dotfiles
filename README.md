@@ -32,11 +32,10 @@ dtf push
 
 ## Vim
 ### Plugin Manager
-- [vim-plug](https://github.com/junegunn/vim-plug)
+- [packer.nvim](https://github.com/wbthomason/packer.nvim)
 
 ```
-:PluginInstall
-:PluginUpdate
+:PackerSync
 ```
 
 ### Manual Plugin Installation

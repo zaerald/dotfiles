@@ -299,6 +299,11 @@ _G.packer_plugins = {
     path = "/Users/zaerald/.local/share/nvim/site/pack/packer/start/vim-rfc",
     url = "https://github.com/mhinz/vim-rfc"
   },
+  ["vim-signify"] = {
+    loaded = true,
+    path = "/Users/zaerald/.local/share/nvim/site/pack/packer/start/vim-signify",
+    url = "https://github.com/mhinz/vim-signify"
+  },
   ["vim-startify"] = {
     loaded = true,
     path = "/Users/zaerald/.local/share/nvim/site/pack/packer/start/vim-startify",

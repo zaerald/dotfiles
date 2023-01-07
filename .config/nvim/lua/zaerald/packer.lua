@@ -63,6 +63,15 @@ return require('packer').startup(function(use)
     }
   }
 
+  -- debugging
+  use { "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } }
+  use { "mxsdev/nvim-dap-vscode-js" }
+  use {
+    "microsoft/vscode-js-debug",
+    opt = true,
+    run = "npm install --legacy-peer-deps && npm run compile"
+  }
+
   -- utils
   use('JoosepAlviste/nvim-ts-context-commentstring')
   use('Raimondi/delimitMate')

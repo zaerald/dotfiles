@@ -34,11 +34,20 @@ vim.keymap.set("n", "fe", builtin.resume, {})
 vim.keymap.set("n", "fu", builtin.buffers, {})
 vim.keymap.set("n", "fc", builtin.commands, {})
 vim.keymap.set("n", "fo", builtin.oldfiles, {})
+vim.keymap.set("n", "fd", builtin.diagnostics, {})
 
 -- git
+vim.keymap.set("n", "fs", builtin.git_status, {})
 vim.keymap.set("n", "ft", builtin.git_commits, {})
 vim.keymap.set("n", "fr", builtin.git_branches, {})
 vim.keymap.set("n", "fH", builtin.help_tags, {})
+
+-- lsp
+vim.keymap.set("n", "flr", builtin.lsp_references, {})
+vim.keymap.set("n", "gR", builtin.lsp_references, {})
+vim.keymap.set("n", "fli", builtin.lsp_incoming_calls, {})
+vim.keymap.set("n", "flo", builtin.lsp_outgoing_calls, {})
+vim.keymap.set("n", "fld", builtin.lsp_definitions, {})
 
 require("telescope").load_extension('harpoon')
 vim.keymap.set("n", "fh", ":Telescope harpoon marks<CR>")

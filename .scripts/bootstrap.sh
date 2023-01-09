@@ -52,7 +52,6 @@ brew install --cask alfred
 brew install --cask anki
 brew install --cask appcleaner
 brew install --cask arduino
-brew install --cask blackhole-16ch
 brew install --cask brave-browser
 brew install --cask calibre
 brew install --cask dbeaver-community

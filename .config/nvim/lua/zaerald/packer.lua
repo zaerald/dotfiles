@@ -83,6 +83,7 @@ return require('packer').startup(function(use)
   use('tpope/vim-surround')
   use('tyru/open-browser.vim')
   use('vim-utils/vim-man')
+  use('Yggdroot/indentLine')
 
   -- misc
   use('christoomey/vim-tmux-navigator')

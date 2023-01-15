@@ -65,6 +65,7 @@ brew install --cask itsycal
 brew install --cask karabiner-elements
 brew install --cask keka
 brew install --cask keycastr
+brew install --cask microsoft-edge
 brew install --cask notion
 brew install --cask postman
 brew install --cask remnote

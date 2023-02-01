@@ -40,6 +40,7 @@ brew install tree-sitter
 
 # misc
 brew install exiftool
+brew install imagemagick
 brew install koekeishiya/formulae/skhd
 brew install koekeishiya/formulae/yabai
 brew install neofetch
@@ -75,4 +76,5 @@ brew install --cask todoist
 brew install --cask ubersicht
 brew install --cask vlc
 brew install --cask wireshark
+brew install --cask xcodes
 

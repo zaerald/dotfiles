@@ -12,6 +12,7 @@ brew install mpv
 brew install ranger
 brew install ripgrep
 brew install tmux
+brew install wget
 
 ## commons-dev
 brew install awscli

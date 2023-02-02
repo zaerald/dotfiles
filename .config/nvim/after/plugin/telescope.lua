@@ -1,3 +1,6 @@
+local telescope = require("telescope")
+local lga_actions = require("telescope-live-grep-args.actions")
+
 if vim.fn.executable('rg') == 1 then
   vim.g.rg_derive_root = 'true'
 end
@@ -23,13 +26,22 @@ require("telescope").setup {
         },
       }
     }
-  }
+  },
+  extensions = {
+    live_grep_args = {
+      mappings = {
+        i = {
+          ["<C-k>"] = lga_actions.quote_prompt(),
+          ["<C-i>"] = lga_actions.quote_prompt({ postfix = " --iglob " }),
+        },
+      },
+    }
+  },
 }
-require("telescope").load_extension("fzy_native")
 
 local builtin = require("telescope.builtin")
 vim.keymap.set("n", "<C-p>", builtin.find_files, {})
-vim.keymap.set("n", "fg", builtin.live_grep, {})
+vim.keymap.set("n", "fg", telescope.extensions.live_grep_args.live_grep_args, {})
 vim.keymap.set("n", "fe", builtin.resume, {})
 vim.keymap.set("n", "fu", builtin.buffers, {})
 vim.keymap.set("n", "fc", builtin.commands, {})

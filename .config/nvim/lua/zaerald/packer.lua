@@ -28,7 +28,12 @@ return require('packer').startup(function(use)
     requires = {
       {'nvim-lua/plenary.nvim'},
       {'nvim-telescope/telescope-fzy-native.nvim'},
-    }
+      {'nvim-telescope/telescope-live-grep-args.nvim'},
+    },
+    config = function()
+      require("telescope").load_extension("fzy_native")
+      require("telescope").load_extension("live_grep_args")
+    end
   }
 
   -- nvim-tree

@@ -5,6 +5,12 @@ if vim.fn.executable('rg') == 1 then
   vim.g.rg_derive_root = 'true'
 end
 
+-- load extensions
+local exts = { "live_grep_args", "fzf", "harpoon" }
+for _, ext in ipairs(exts) do
+  telescope.load_extension(ext)
+end
+
 require("telescope").setup {
   defaults = {
     path_display = { "truncate" },
@@ -35,6 +41,9 @@ require("telescope").setup {
           ["<C-i>"] = lga_actions.quote_prompt({ postfix = " --iglob " }),
         },
       },
+    },
+    fzf = {
+      fuzzy = true,
     }
   },
 }
@@ -61,8 +70,6 @@ vim.keymap.set("n", "fli", builtin.lsp_incoming_calls, {})
 vim.keymap.set("n", "flo", builtin.lsp_outgoing_calls, {})
 vim.keymap.set("n", "fld", builtin.lsp_definitions, {})
 
-require("telescope").load_extension('harpoon')
 vim.keymap.set("n", "fh", ":Telescope harpoon marks<CR>")
 
 vim.cmd("autocmd User TelescopePreviewerLoaded setlocal wrap")
-

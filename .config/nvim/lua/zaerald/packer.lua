@@ -35,6 +35,10 @@ return require('packer').startup(function(use)
       require("telescope").load_extension("live_grep_args")
     end
   }
+  use {
+    'nvim-telescope/telescope-fzf-native.nvim',
+    run = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build'
+  }
 
   -- nvim-tree
   use('kyazdani42/nvim-tree.lua')

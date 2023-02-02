@@ -85,6 +85,7 @@ plugins=(
   git
   dnf
   npm
+  fzf-zsh-plugin
   zsh-autosuggestions
   zsh-syntax-highlighting
 )

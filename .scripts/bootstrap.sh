@@ -5,6 +5,7 @@
 ## commons-core
 brew install curl
 brew install fd
+brew install fzf
 brew install htop
 brew install jo
 brew install jq

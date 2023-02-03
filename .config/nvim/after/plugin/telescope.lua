@@ -5,12 +5,6 @@ if vim.fn.executable('rg') == 1 then
   vim.g.rg_derive_root = 'true'
 end
 
--- load extensions
-local exts = { "live_grep_args", "fzf", "harpoon" }
-for _, ext in ipairs(exts) do
-  telescope.load_extension(ext)
-end
-
 require("telescope").setup {
   defaults = {
     path_display = { "truncate" },
@@ -47,6 +41,12 @@ require("telescope").setup {
     }
   },
 }
+
+-- load extensions
+local exts = { "live_grep_args", "fzf", "harpoon" }
+for _, ext in ipairs(exts) do
+  telescope.load_extension(ext)
+end
 
 local builtin = require("telescope.builtin")
 vim.keymap.set("n", "<C-p>", builtin.find_files, {})

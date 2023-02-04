@@ -66,6 +66,8 @@ vim.keymap.set("n", "fH", builtin.help_tags, {})
 -- lsp
 vim.keymap.set("n", "flr", builtin.lsp_references, {})
 vim.keymap.set("n", "gR", builtin.lsp_references, {})
+vim.keymap.set("n", "fls", builtin.lsp_document_symbols, {})
+vim.keymap.set("n", "flS", builtin.lsp_workspace_symbols, {})
 vim.keymap.set("n", "fli", builtin.lsp_incoming_calls, {})
 vim.keymap.set("n", "flo", builtin.lsp_outgoing_calls, {})
 vim.keymap.set("n", "fld", builtin.lsp_definitions, {})

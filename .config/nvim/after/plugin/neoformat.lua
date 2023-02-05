@@ -10,8 +10,10 @@ local function toggleNeoformatOnSave()
       command = "try | undojoin | Neoformat | catch /E790/ | Neoformat | endtry",
       group = auGroup,
     })
+    print "neoformat enabled"
   else
     vim.api.nvim_del_augroup_by_id(auGroup)
+    print "neoformat disabled"
   end
 end
 

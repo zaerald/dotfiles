@@ -1,5 +1,3 @@
-vim.g.mapleader = " "
-
 -- move selected lines
 vim.keymap.set("v", "J", "<cmd>m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", "<cmd>m '<-2<CR>gv=gv")

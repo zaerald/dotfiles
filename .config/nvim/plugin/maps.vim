@@ -14,7 +14,9 @@ nnoremap <silent> <Leader>- :vertical resize -5<CR>
 nnoremap <C-d> <C-d>zz
 nnoremap <C-u> <C-u>zz
 nnoremap H zH
+vnoremap H zH
 nnoremap L zL
+vnoremap L zL
 nnoremap n nzzzv
 nnoremap N Nzzzv
 

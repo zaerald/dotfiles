@@ -71,6 +71,7 @@ brew install --cask keycastr
 brew install --cask microsoft-edge
 brew install --cask notion
 brew install --cask postman
+brew install --cask rectangle
 brew install --cask remnote
 brew install --cask skim
 brew install --cask spotify

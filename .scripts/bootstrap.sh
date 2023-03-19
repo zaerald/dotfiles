@@ -51,7 +51,6 @@ brew install rclone
 ## applications ##
 brew install --cask alacritty
 brew install --cask aldente
-brew install --cask alfred
 brew install --cask anki
 brew install --cask appcleaner
 brew install --cask arduino
@@ -71,6 +70,7 @@ brew install --cask keycastr
 brew install --cask microsoft-edge
 brew install --cask notion
 brew install --cask postman
+brew install --cask raycast
 brew install --cask rectangle
 brew install --cask remnote
 brew install --cask skim

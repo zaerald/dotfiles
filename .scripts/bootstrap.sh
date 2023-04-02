@@ -33,7 +33,6 @@ brew install perl
 
 ## langs-tools
 brew install fnm
-brew install jenv
 brew install pnpm
 
 # neovim

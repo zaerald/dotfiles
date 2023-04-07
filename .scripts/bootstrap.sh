@@ -18,6 +18,7 @@ brew install wget
 ## commons-dev
 brew install awscli
 brew install bat
+brew install deno
 brew install git-delta
 brew install gpg
 brew install jesseduffield/lazygit/lazygit

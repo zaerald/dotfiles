@@ -49,10 +49,16 @@ return require('packer').startup(function(use)
   use('nvim-treesitter/nvim-treesitter-context')
   use {
     'VonHeikemen/lsp-zero.nvim',
+    branch = 'v2.x',
     requires = {
       -- LSP support
       {'neovim/nvim-lspconfig'},
-      {'williamboman/mason.nvim'},
+      {
+        'williamboman/mason.nvim',
+        run = function()
+          pcall(vim.cmd, 'MasonUpdate')
+        end
+      },
       {'williamboman/mason-lspconfig.nvim'},
 
       -- autocompletion

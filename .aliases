@@ -32,6 +32,9 @@ alias tx=tmuxifier
 alias txl='tmuxifier load-session'
 alias txn='tmuxifier new-session'
 
+# zellij
+alias zj=zellij
+
 # shortcuts
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"

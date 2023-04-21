@@ -29,6 +29,13 @@ if which tmux >/dev/null 2>&1; then
   alias tkS='tmux kill-server'
 fi
 
+# tmuxifier
+if which tmuxifier >/dev/null 2>&1; then
+  alias tx=tmuxifier
+  alias txl='tmuxifier load-session'
+  alias txn='tmuxifier new-session'
+fi
+
 # shortcuts
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"

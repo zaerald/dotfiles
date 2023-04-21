@@ -13,3 +13,8 @@ alias nvm="unalias nvm; [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"; nvm $@"
 # fnm
 eval "$(fnm env --use-on-cd)"
 
+# tmuxifier
+if which fnm > /dev/null 2>&1; then
+  eval "$(tmuxifier init -)"
+fi
+

@@ -18,3 +18,7 @@ fi
 export GOPATH=~/go
 export PATH="$GOPATH/bin:$PATH"
 
+# tmuxifier
+export PATH="$HOME/.tmux/plugins/tmuxifier/bin:$PATH"
+export TMUXIFIER_LAYOUT_PATH="$HOME/.tmux/layouts"
+

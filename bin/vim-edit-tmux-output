@@ -1,0 +1,6 @@
+#!/bin/bash
+
+file=`mktemp`.sh
+tmux capture-pane -pS - > $file
+tmux new-window -n:scratch "$EDITOR '+ normal G $' $file"
+

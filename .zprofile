@@ -5,16 +5,13 @@ for file in ~/.{exports,functions,extra}; do
 done;
 unset file;
 
-# nvm-sh
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-alias nvm="unalias nvm; [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"; nvm $@"
-
 # fnm
-eval "$(fnm env --use-on-cd)"
+if which fnm > /dev/null 2>&1; then
+  eval "$(fnm env --use-on-cd)"
+fi
 
 # tmuxifier
-if which fnm > /dev/null 2>&1; then
+if which tmuxifier > /dev/null 2>&1; then
   eval "$(tmuxifier init -)"
 fi
 

@@ -5,21 +5,16 @@ for file in ~/.{functions,extra}; do
 done;
 unset file;
 
-# fnm
-if which fnm > /dev/null 2>&1; then
-  eval "$(fnm env --use-on-cd)"
-fi
-
 # tmuxifier
 if which tmuxifier > /dev/null 2>&1; then
   eval "$(tmuxifier init -)"
 fi
 
-# brew
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
 # fnm
 if which fnm > /dev/null 2>&1; then
   eval "$(fnm env --use-on-cd)"
 fi
+
+# brew
+eval "$(/opt/homebrew/bin/brew shellenv)"
 

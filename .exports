@@ -4,6 +4,13 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export TERM=xterm-256color
 
+# gnu
+if which brew > /dev/null 2>&1; then
+  export PATH="$HOMEBREW_PREFIX/opt/gnu-sed/libexec/gnubin:$PATH"
+  export PATH="$HOMEBREW_PREFIX/opt/grep/libexec/gnubin:$PATH"
+  export PATH="$HOMEBREW_PREFIX/opt/gnu-tar/libexec/gnubin:$PATH"
+fi
+
 # make neovim the default editor
 if which nvim > /dev/null 2>&1; then
   export EDITOR='nvim';
@@ -22,13 +29,6 @@ export PATH="$GOPATH/bin:$PATH"
 # tmuxifier
 export PATH="$HOME/.config/tmux/plugins/tmuxifier/bin:$PATH"
 export TMUXIFIER_LAYOUT_PATH="$HOME/.config/tmux/layouts"
-
-# gnu
-if which brew > /dev/null 2>&1; then
-  export PATH="$HOMEBREW_PREFIX/opt/gnu-sed/libexec/gnubin:$PATH"
-  export PATH="$HOMEBREW_PREFIX/opt/grep/libexec/gnubin:$PATH"
-  export PATH="$HOMEBREW_PREFIX/opt/gnu-tar/libexec/gnubin:$PATH"
-fi
 
 # python
 export PATH="/Library/Frameworks/Python.framework/Versions/3.10/bin:${PATH}"

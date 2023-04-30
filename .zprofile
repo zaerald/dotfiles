@@ -5,11 +5,6 @@ for file in ~/.{functions,extra}; do
 done;
 unset file;
 
-# tmuxifier
-if which tmuxifier > /dev/null 2>&1; then
-  eval "$(tmuxifier init -)"
-fi
-
 # fnm
 if which fnm > /dev/null 2>&1; then
   eval "$(fnm env --use-on-cd)"

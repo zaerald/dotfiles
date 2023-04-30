@@ -55,7 +55,6 @@ brew install --cask anki
 brew install --cask appcleaner
 brew install --cask arduino
 brew install --cask brave-browser
-brew install --cask calibre
 brew install --cask dbeaver-community
 brew install --cask discord
 brew install --cask docker

@@ -1,5 +1,8 @@
 #!/bin/bash
 
+nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
+nvim -c "TSInstallSync maintained" -c q
+
 # tools
 
 ## commons-core

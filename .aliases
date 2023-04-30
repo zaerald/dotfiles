@@ -20,21 +20,17 @@ if [[ $OSTYPE == 'darwin'* ]]; then
 fi
 
 # tmux
-if which tmux >/dev/null 2>&1; then
-  alias t=tmux
-  alias tl='tmux ls'
-  alias tn='tmux new -s'
-  alias ta='tmux attach -t'
-  alias tk='tmux kill-session -t'
-  alias tkS='tmux kill-server'
-fi
+alias t=tmux
+alias tl='tmux ls'
+alias tn='tmux new -s'
+alias ta='tmux attach -t'
+alias tk='tmux kill-session -t'
+alias tkS='tmux kill-server'
 
 # tmuxifier
-if which tmuxifier >/dev/null 2>&1; then
-  alias tx=tmuxifier
-  alias txl='tmuxifier load-session'
-  alias txn='tmuxifier new-session'
-fi
+alias tx=tmuxifier
+alias txl='tmuxifier load-session'
+alias txn='tmuxifier new-session'
 
 # shortcuts
 alias dl="cd ~/Downloads"
@@ -57,10 +53,8 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
 # vim related
-if which nvim > /dev/null 2>&1; then
-  alias v=nvim
-  alias vim=nvim
-fi
+alias v=nvim
+alias vim=nvim
 
 # programs
 alias g=git

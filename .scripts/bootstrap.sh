@@ -13,6 +13,7 @@ brew install htop
 brew install jo
 brew install jq
 brew install mpv
+brew install nnn
 brew install ranger
 brew install ripgrep
 brew install tmux
@@ -50,6 +51,8 @@ brew install koekeishiya/formulae/skhd
 brew install koekeishiya/formulae/yabai
 brew install neofetch
 brew install rclone
+brew install ffmpeg
+brew install ffmpegthumbnailer
 
 ## applications ##
 brew install --cask alacritty

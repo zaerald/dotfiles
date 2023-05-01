@@ -46,13 +46,14 @@ brew install tree-sitter
 
 # misc
 brew install exiftool
+brew install ffmpeg
+brew install ffmpegthumbnailer
 brew install imagemagick
 brew install koekeishiya/formulae/skhd
 brew install koekeishiya/formulae/yabai
+brew install lsix
 brew install neofetch
 brew install rclone
-brew install ffmpeg
-brew install ffmpegthumbnailer
 
 ## applications ##
 brew install --cask alacritty

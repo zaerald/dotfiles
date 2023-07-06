@@ -17,9 +17,8 @@ require("telescope").setup {
     },
     buffers = {
       show_all_buffers = true,
-      sort_lastused = true,
+      sort_lastused = false,
       theme = "dropdown",
-      previewer = false,
       mappings = {
         i = {
           ["<C-x>"] = "delete_buffer",

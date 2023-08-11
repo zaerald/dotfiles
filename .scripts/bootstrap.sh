@@ -6,6 +6,7 @@ nvim -c "TSInstallSync maintained" -c q
 # tools
 
 ## commons-core
+brew install aria2
 brew install curl
 brew install fd
 brew install fzf
@@ -52,6 +53,7 @@ brew install imagemagick
 brew install koekeishiya/formulae/skhd
 brew install koekeishiya/formulae/yabai
 brew install lsix
+brew install motrix
 brew install neofetch
 brew install rclone
 

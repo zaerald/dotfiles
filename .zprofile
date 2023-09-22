@@ -5,13 +5,13 @@ for file in ~/.{functions,extra}; do
 done;
 unset file;
 
+# brew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # fnm
 if which fnm > /dev/null 2>&1; then
   eval "$(fnm env --use-on-cd)"
 fi
-
-# brew
-eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # sdkman
 export SDKMAN_DIR="$HOME/.sdkman"

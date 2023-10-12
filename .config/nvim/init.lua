@@ -1,7 +1,2 @@
-vim.g.mapleader = " "
-
-vim.cmd("source" .. vim.fn.stdpath('config') .. "/plugin/sets.vim")
-vim.cmd("source" .. vim.fn.stdpath('config') .. "/plugin/maps.vim")
-
-require("zaerald")
-
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")

@@ -2,8 +2,8 @@ set encoding=utf-8
 scriptencoding utf-8
 let mapleader=" "
 
-source ~/.config/nvim/plugin/sets.vim
-source ~/.config/nvim/plugin/maps.vim
+source ~/.config/ideavim/sets.vim
+source ~/.config/ideavim/maps.vim
 
 nnoremap <leader>ww :w<CR>
 

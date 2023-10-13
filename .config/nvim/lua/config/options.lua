@@ -2,7 +2,7 @@ local opt = vim.opt
 
 opt.hlsearch = false
 opt.guicursor = nil
-opt.conceallevel = nil
+opt.conceallevel = 0
 opt.scrolloff = 8
 opt.listchars:append({ lead = "." })
 opt.listchars:append({ trail = "·" })

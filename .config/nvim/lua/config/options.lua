@@ -1,5 +1,7 @@
 local opt = vim.opt
 
+vim.g.autoformat = false
+
 opt.hlsearch = false
 opt.guicursor = nil
 opt.conceallevel = 0

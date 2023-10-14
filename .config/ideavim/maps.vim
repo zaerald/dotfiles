@@ -1,5 +1,5 @@
 nnoremap <C-c> <Esc>
-nnoremap <leader>q :q!
+nnoremap <leader>qq :q
 nnoremap <leader>Q :qa!
 nnoremap <leader>w :w<CR>
 

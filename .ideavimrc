@@ -62,10 +62,13 @@ map <leader>dr <Action>(Resume)
 
 " breakpoints
 map <leader>bb <Action>(ToggleLineBreakpoint)
+map <leader>bt <Action>(ToggleBreakpointEnabled)
 map <leader>bm <Action>(XDebugger.MuteBreakpoints)
 map <leader>be <Action>(EditBreakpoint)
 map <leader>bw <Action>(ViewBreakpoints)
-map <leader>br <Action>(Debugger.RemoveAllBreakpoints)
+map <leader>brf <Action>(Debugger.RemoveAllBreakpointsInFile)
+map <leader>brr <Action>(Debugger.RemoveAllBreakpoints)
+map <leader>brR <Action>(Debugger.RestoreBreakpoint)
 
 " file navigation
 map <leader>aa <Action>(GotoAction)

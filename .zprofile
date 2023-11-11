@@ -17,3 +17,8 @@ fi
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
+# buildpack
+if which pack > /dev/null 2>&1; then
+  . $(pack completion --shell zsh)
+fi
+

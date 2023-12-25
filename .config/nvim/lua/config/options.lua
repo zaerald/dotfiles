@@ -3,7 +3,7 @@ local opt = vim.opt
 vim.g.autoformat = false
 
 opt.hlsearch = false
-opt.guicursor = nil
+opt.guicursor = "n-v-c-sm-i-ci-ve:block,r-cr-o:hor20"
 opt.conceallevel = 0
 opt.scrolloff = 8
 opt.listchars:append({ lead = "." })

@@ -15,10 +15,6 @@ vnoremap L zL
 nnoremap n nzzzv
 nnoremap N Nzzzv
 
-" insert lines without insert mode
-nnoremap o o<Esc>
-nnoremap O O<Esc>
-
 " close all buffers except current
 nnoremap <silent> <leader>bo :w <bar> %bd <bar> e# <bar> bd# <CR><CR>
 

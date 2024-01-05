@@ -67,9 +67,6 @@
 [init]
   defaultBranch = main
 
-[interactive]
-  diffFilter = data --color-only
-
 [delta]
   navigate = true
   light = false

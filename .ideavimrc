@@ -147,6 +147,7 @@ map <leader>fN <Action>(FindPrevious)
 
 " marks
 map <leader><C-b> <Action>(ShowBookmarks)
+map <leader><C-m> <Action>(ToggleBookmarkWithMnemonic)
 map <leader>B <Action>(Bookmarks)
 
 map m1 <Action>(ToggleBookmark1)
@@ -213,6 +214,7 @@ map 'z <Action>(GotoBookmarkZ)
 map <leader>yr <Action>(CopyReference)
 map <leader>yP <Action>(CopyPaths)
 map <leader>yp <Action>(CopyPathFromRepositoryRootProvider)
+map <leader>yf <Action>(CopyFileName)
 
 " windows
 map <leader>wr <Action>(ActivateRunToolWindow)
@@ -220,6 +222,7 @@ map <leader>wd <Action>(ActivateDebugToolWindow)
 map <leader>wb <Action>(ActivateBuildToolWindow)
 map <leader>we <Action>(ActivateEventLogToolWindow)
 map <leader>wm <Action>(ActivateProblemsViewToolWindow)
+map <leader>ws <Action>(ActivateServicesToolWindow)
 map <leader>wt <Action>(ActivateTerminalToolWindow)
 map <leader>wf <Action>(ActivateFindToolWindow)
 map <leader>wo <Action>(Terminal.OpenInTerminal)
@@ -248,3 +251,4 @@ map <leader><C-s-q> <Action>(CloseOtherProjects)
 " others
 map <leader>MM <Action>(meme.machine)
 map <leader>MD <Action>(zd.zero.waifu.motivator.plugin.actions.ShowWaifuOfTheDayAction)
+

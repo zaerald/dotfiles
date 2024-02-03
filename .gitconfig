@@ -4,6 +4,7 @@
 [core]
   editor = "$(which nvim)"
   pager = delta
+  autocrlf = input
 
 [alias]
   a = add

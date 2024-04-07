@@ -4,7 +4,7 @@ vim.g.autoformat = false
 
 opt.hlsearch = false
 opt.guicursor = "n-v-c-sm-i-ci-ve:block,r-cr-o:hor20"
-opt.conceallevel = 0
+opt.conceallevel = 2
 opt.scrolloff = 8
 opt.listchars:append({ lead = "." })
 opt.listchars:append({ trail = "·" })

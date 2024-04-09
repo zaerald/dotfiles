@@ -7,6 +7,7 @@ vim.keymap.set("n", "<C-Space>", "<Cmd>TmuxNavigateNavigateNext<CR>", { silent =
 
 -- toggles
 vim.keymap.set("n", "<leader>uH", "<cmd>set hlsearch!<CR><Bar><Cmd>set hlsearch?<CR>", { silent = true })
+vim.keymap.set("n", "<leader>uz", "<cmd>ZenMode<CR>", { silent = true })
 
 -- navigation
 vim.keymap.set("n", "<C-d>", "<C-d>zz", { silent = true })

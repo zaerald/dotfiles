@@ -15,7 +15,7 @@ vim.keymap.set("n", "<leader>op", "<cmd>ObsidianPasteImg<CR>")
 -- checklist maps
 vim.keymap.set("x", "<leader>ocr", "<cmd>'<,'>s/[~>x ]\\]/ \\]/<CR>")
 vim.keymap.set("x", "<leader>occ", "<cmd>'<,'>s/[~>x ]\\]/x\\]/<CR>")
-vim.keymap.set("x", "<leader>ocl", "<cmd>'<,'>s/[~>x ]\\]/~\\]/<CR>")
+vim.keymap.set("x", "<leader>ocl", "<cmd>'<,'>s/[~>x ]\\]/\\~\\]/<CR>")
 vim.keymap.set("x", "<leader>ocf", "<cmd>'<,'>s/[~>x ]\\]/>\\]/<CR>")
 
 return {

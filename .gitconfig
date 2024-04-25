@@ -19,6 +19,7 @@
   co = checkout
   cb = checkout -b
   b = branch
+  bb = "!f() { git branch "$(git branch --show-current)_$(date +%Y%m%d_%H%M%S)"; }; f"
   br = branch -r
   bn = branch --show-current
   bd = branch -d

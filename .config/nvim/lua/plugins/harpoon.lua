@@ -11,8 +11,8 @@ return {
       },
     },
     keys = {
-      { "<leader>hm", "<cmd>lua require('harpoon.mark').add_file()<cr>", desc = "Mark file" },
       { "<leader>m", "<cmd>lua require('harpoon.ui').toggle_quick_menu()<cr>", desc = "Open harpoon" },
+      { "<leader>ha", "<cmd>lua require('harpoon.mark').add_file()<cr>", desc = "Mark file" },
 
       { "<leader>1", "<cmd>lua require('harpoon.ui').nav_file(1)<cr>", desc = "Navigate file 1" },
       { "<leader>2", "<cmd>lua require('harpoon.ui').nav_file(2)<cr>", desc = "Navigate file 2" },

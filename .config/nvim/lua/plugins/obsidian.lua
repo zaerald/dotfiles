@@ -13,9 +13,13 @@ vim.keymap.set("n", "<leader>og", "<cmd>ObsidianTags<CR>")
 vim.keymap.set("n", "<leader>op", "<cmd>ObsidianPasteImg<CR>")
 
 -- checklist maps
+vim.keymap.set("n", "<leader>ocr", ":s/[~>x ]\\]/ \\]/<CR>", { noremap = true, silent = true })
 vim.keymap.set("x", "<leader>ocr", ":s/[~>x ]\\]/ \\]/<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>occ", ":s/[~>x ]\\]/x\\]/<CR>", { noremap = true, silent = true })
 vim.keymap.set("x", "<leader>occ", ":s/[~>x ]\\]/x\\]/<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>ocl", ":s/[~>x ]\\]/\\~\\]/<CR>", { noremap = true, silent = true })
 vim.keymap.set("x", "<leader>ocl", ":s/[~>x ]\\]/\\~\\]/<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>ocf", ":s/[~>x ]\\]/>\\]/<CR>", { noremap = true, silent = true })
 vim.keymap.set("x", "<leader>ocf", ":s/[~>x ]\\]/>\\]/<CR>", { noremap = true, silent = true })
 
 return {

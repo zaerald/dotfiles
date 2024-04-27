@@ -83,8 +83,8 @@ map <leader>hh <Action>(TypeHierarchy)
 map <leader>hm <Action>(MethodHierarchy)
 map <leader>hc <Action>(CallHierarchy)
 map <leader>o <Action>(OverrideMethods)
-map <leader>m <Action>(FileStructurePopup)
-map <leader>sp <Action>(SelectInProjectView)
+map <leader>st <Action>(FileStructurePopup)
+map <leader>fe <Action>(SelectInProjectView)
 
 map <Leader>en <Action>(EditSourceInNewWindow)
 
@@ -241,9 +241,9 @@ map <leader><C-s-q> <Action>(CloseOtherProjects)
 map <leader>MM <Action>(meme.machine)
 map <leader>MD <Action>(zd.zero.waifu.motivator.plugin.actions.ShowWaifuOfTheDayAction)
 
-" harpooner (https://github.com/erotourtes/Harpooner)
+" harpooner
 map <leader>m <Action>(HarpoonerQuickMenu)
-map <leader>hm <Action>(HarpoonerAddFile)
+map <leader>ha <Action>(HarpoonerAddFile)
 
 map <leader>1 <Action>(HarpoonerOpenFile0)
 map <leader>2 <Action>(HarpoonerOpenFile1)

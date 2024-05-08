@@ -8,6 +8,7 @@ nvim -c "TSInstallSync maintained" -c q
 ## commons-core
 brew install aria2
 brew install curl
+brew install eza
 brew install fd
 brew install fzf
 brew install htop
@@ -17,6 +18,7 @@ brew install mpv
 brew install nnn
 brew install ranger
 brew install ripgrep
+brew install tlrc
 brew install tmux
 brew install wget
 

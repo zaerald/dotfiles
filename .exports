@@ -17,6 +17,12 @@ if which nvim > /dev/null 2>&1; then
   export VISUAL='nvim';
 fi
 
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+show_file_or_dir_preview="if [ -d {} ]; then eza --tree --color=always {} | head -200; else bat -n --color=always --line-range :500 {}; fi"
+export FZF_CTRL_T_OPTS="--preview '$show_file_or_dir_preview'"
+export FZF_ALT_C_OPTS="--preview 'eza --tree --color=always {} | head -200'"
+
 # jenv
 if which jenv > /dev/null 2>&1; then
   export JAVA_HOME="$(jenv prefix)"
@@ -32,4 +38,8 @@ export TMUXIFIER_LAYOUT_PATH="$HOME/.config/tmux/layouts"
 
 # python
 export PATH="/Library/Frameworks/Python.framework/Versions/3.10/bin:${PATH}"
+
+# nvs
+export NVS_HOME="$HOME/.nvs"
+[ -s "$NVS_HOME/nvs.sh" ] && . "$NVS_HOME/nvs.sh"
 

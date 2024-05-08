@@ -6,6 +6,9 @@
   pager = delta
   autocrlf = input
 
+[interactive]
+  diffFilter = delta --color-only
+
 [alias]
   a = add
   aa = add .

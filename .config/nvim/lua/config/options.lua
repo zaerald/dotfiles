@@ -1,6 +1,7 @@
 local opt = vim.opt
 
 vim.g.autoformat = false
+vim.o.wrap = false
 
 opt.hlsearch = false
 opt.guicursor = "n-v-c-sm-i-ci-ve:block,r-cr-o:hor20"
@@ -12,3 +13,4 @@ opt.listchars:append({ tab = "▸ " })
 opt.listchars:append({ extends = "»" })
 opt.listchars:append({ precedes = "«" })
 opt.listchars:append({ nbsp = "⣿" })
+

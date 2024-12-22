@@ -2,6 +2,7 @@ local opt = vim.opt
 
 vim.g.autoformat = false
 vim.o.wrap = false
+vim.g.snacks_animate = false
 
 opt.hlsearch = false
 opt.guicursor = "n-v-c-sm-i-ci-ve:block,r-cr-o:hor20"

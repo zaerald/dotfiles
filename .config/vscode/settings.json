@@ -1,0 +1,12 @@
+{
+    "workbench.colorTheme": "Tokyo Night",
+    "window.zoomLevel": 1,
+    "editor.fontSize": 14,
+    "editor.lineNumbers": "relative",
+    "workbench.sideBar.location": "right",
+    "window.commandCenter": false,
+    "workbench.layoutControl.enabled": false,
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    }
+}

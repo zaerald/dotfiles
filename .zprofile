@@ -13,8 +13,14 @@ if which fnm > /dev/null 2>&1; then
   eval "$(fnm env --use-on-cd)"
 fi
 
+# fzf
 if which fzf > /dev/null 2>&1; then
   source <(fzf --zsh)
+fi
+
+# tmuxifier
+if which tmuxifier > /dev/null 2>&1; then
+  eval "$(tmuxifier init -)"
 fi
 
 # sdkman

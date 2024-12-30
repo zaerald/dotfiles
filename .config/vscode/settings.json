@@ -1,12 +1,48 @@
 {
-    "workbench.colorTheme": "Tokyo Night",
-    "window.zoomLevel": 1,
-    "editor.fontSize": 14,
-    "editor.lineNumbers": "relative",
-    "workbench.sideBar.location": "right",
-    "window.commandCenter": false,
-    "workbench.layoutControl.enabled": false,
-    "[jsonc]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    }
+  "workbench.colorTheme": "Tokyo Night",
+  "workbench.sideBar.location": "right",
+  "workbench.editor.showTabs": "none",
+  "workbench.activityBar.location": "hidden",
+  "explorer.confirmDelete": false,
+  "editor.fontSize": 14,
+  "editor.cursorStyle": "block",
+  "editor.lineNumbers": "relative",
+  "editor.minimap.enabled": false,
+  "editor.showFoldingControls": "never",
+  "window.customTitleBarVisibility": "never",
+  "window.zoomLevel": 1,
+  "editor.tabSize": 2,
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "vim.leader": " ",
+  "vim.useSystemClipboard": true,
+  "vim.normalModeKeyBindings": [],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": [
+        ">"
+      ],
+      "commands": [
+        "editor.action.indentLines"
+      ]
+    },
+    {
+      "before": [
+        "<"
+      ],
+      "commands": [
+        "editor.action.outdentLines"
+      ]
+    },
+  ],
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "editor.renderWhitespace": "boundary",
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  }
 }

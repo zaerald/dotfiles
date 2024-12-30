@@ -13,6 +13,10 @@ if which fnm > /dev/null 2>&1; then
   eval "$(fnm env --use-on-cd)"
 fi
 
+if which fzf > /dev/null 2>&1; then
+  source <(fzf --zsh)
+fi
+
 # sdkman
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
@@ -21,4 +25,5 @@ export SDKMAN_DIR="$HOME/.sdkman"
 if which pack > /dev/null 2>&1; then
   . $(pack completion --shell zsh)
 fi
+
 

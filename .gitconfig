@@ -46,6 +46,7 @@
   fa = fetch --all
   rhh = reset --hard HEAD
   rb = rebase
+  rbi = rebase --interactive
   rbo = rebase --onto
   t = tag
   ts = tag -l

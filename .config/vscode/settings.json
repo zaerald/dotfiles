@@ -12,37 +12,74 @@
   "window.customTitleBarVisibility": "never",
   "window.zoomLevel": 1,
   "editor.tabSize": 2,
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "vim.leader": " ",
-  "vim.useSystemClipboard": true,
-  "vim.normalModeKeyBindings": [],
-  "vim.visualModeKeyBindings": [
-    {
-      "before": [
-        ">"
-      ],
-      "commands": [
-        "editor.action.indentLines"
-      ]
-    },
-    {
-      "before": [
-        "<"
-      ],
-      "commands": [
-        "editor.action.outdentLines"
-      ]
-    },
-  ],
   "window.commandCenter": false,
   "workbench.layoutControl.enabled": false,
   "editor.renderWhitespace": "boundary",
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
   "[typescript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
-  }
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "vim.leader": "<space>",
+  "vim.useSystemClipboard": true,
+  "vim.cursorStylePerMode.insert": "block",
+  "vim.cursorStylePerMode.normal": "block",
+  "vim.cursorStylePerMode.replace": "block",
+  "vim.cursorStylePerMode.visual": "block",
+  "vim.cursorStylePerMode.visualblock": "block",
+  "vim.cursorStylePerMode.visualline": "block",
+  "vim.highlightedyank.enable": true,
+  "vim.handleKeys": {
+    "<C-d>": true,
+    "<C-s>": false,
+    "<C-z>": false
+  },
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<leader>", "<leader>"],
+      "commands": ["workbench.action.quickOpen"],
+    },
+    {
+      "before": ["<leader>", "/"],
+      "commands": ["workbench.action.findInFiles"],
+    },
+    {
+      "before": ["<leader>", "f", "f"],
+      "commands": ["workbench.view.explorer"],
+    },
+    {
+      "before": ["<leader>", "f", "e"],
+      "commands": ["revealInExplorer"],
+    },
+    // windows
+    {
+      "before": ["<leader>", "w", "e"],
+      "commands": ["workbench.view.extensions"],
+    },
+    {
+      "before": ["<leader>", "w", "g"],
+      "commands": ["workbench.view.scm"],
+    },
+    {
+      "before": ["<leader>", "w", "t"],
+      "commands": ["workbench.action.terminal.toggleTerminal"],
+    },
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"],
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"],
+    },
+  ],
 }

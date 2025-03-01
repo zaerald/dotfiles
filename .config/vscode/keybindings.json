@@ -26,6 +26,20 @@
     "command": "workbench.action.focusBelowGroup",
     "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
   },
+  // windows
+  {
+    "key": "escape",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "!editorFocus && !terminalFocus"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "workbench.action.toggleSidebarVisibility",
+  },
+  {
+    "key": "ctrl+t",
+    "command": "workbench.action.togglePanel",
+  },
   // explorer
   {
     "key": "e",

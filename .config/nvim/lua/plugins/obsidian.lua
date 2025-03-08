@@ -31,36 +31,26 @@ return {
     dependencies = {
       "nvim-lua/plenary.nvim",
     },
-    daily_notes = {
-      folder = "daily",
-      date_format = "%Y/%m-%B/%Y-%m-%d",
-      template = nil,
-    },
-    completion = {
-      nvim_cmp = true,
-      min_chars = 2,
-    },
-    mappings = {
-      ["gf"] = {
-        action = function()
-          return require("obsidian").util.gf_passthrough()
-        end,
-        opts = { noremap = false, expr = true, buffer = true },
-      },
-      ["<leader>ch"] = {
-        action = function()
-          return require("obsidian").util.toggle_checkbox()
-        end,
-        opts = { buffer = true },
-      },
-      ["<cr>"] = {
-        action = function()
-          return require("obsidian").util.smart_action()
-        end,
-        opts = { buffer = true },
-      },
-    },
     opts = {
+      daily_notes = {
+        folder = "daily",
+        date_format = "%Y/%m-%B/%Y-%m-%d",
+        template = nil,
+      },
+      mappings = {
+        ["gf"] = {
+          action = function()
+            return require("obsidian").util.gf_passthrough()
+          end,
+          opts = { noremap = false, expr = true, buffer = true },
+        },
+        ["<cr>"] = {
+          action = function()
+            return require("obsidian").util.smart_action()
+          end,
+          opts = { buffer = true },
+        },
+      },
       workspaces = {
         {
           name = "no-vault",

@@ -24,7 +24,7 @@ vim.keymap.set("x", "<leader>ocf", ":s/[~>x ]\\]/>\\]/<CR>", { noremap = true, s
 
 return {
   {
-    "epwalsh/obsidian.nvim",
+    "obsidian-nvim/obsidian.nvim",
     version = "*",
     lazy = true,
     ft = "markdown",
@@ -32,7 +32,8 @@ return {
       "nvim-lua/plenary.nvim",
     },
     daily_notes = {
-      date_format = "%Y-%m-%d",
+      folder = "daily",
+      date_format = "%Y/%m-%B/%Y-%m-%d",
       template = nil,
     },
     completion = {

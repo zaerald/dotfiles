@@ -7,7 +7,7 @@ alias sudo='sudo '
 alias week='date +%V'
 
 # Reload the shell (i.e. invoke as a login shell)
-alias rl="exec ${SHELL} -l"
+alias rl="exec \"\${SHELL}\" -l"
 
 # xclip
 if which xclip >/dev/null 2>&1; then

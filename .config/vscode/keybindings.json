@@ -5,6 +5,22 @@
     "command": "editor.action.showHover",
     "when": "editorTextFocus && vim.active && vim.mode != 'Insert'"
   },
+  {
+    "key": "ctrl+shift+5",
+    "command": "editor.emmet.action.matchTag",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && (editorLangId == 'html' || editorLangId == 'javascriptreact' || editorLangId == 'typescriptreact')"
+  },
+  // text navigation
+  {
+    "key": "] ]",
+    "command": "editor.action.wordHighlight.next",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && hasWordHighlights"
+  },
+  {
+    "key": "[ [",
+    "command": "editor.action.wordHighlight.prev",
+    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && hasWordHighlights"
+  },
   // navigation
   {
     "key": "ctrl+h",
@@ -33,7 +49,11 @@
     "when": "!editorFocus && !terminalFocus"
   },
   {
-    "key": "ctrl+n",
+    "key": "ctrl+shift+h",
+    "command": "workbench.action.toggleAuxiliaryBar",
+  },
+  {
+    "key": "ctrl+shift+l",
     "command": "workbench.action.toggleSidebarVisibility",
   },
   {

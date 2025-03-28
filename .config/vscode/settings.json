@@ -4,7 +4,7 @@
   "workbench.editor.showTabs": "none",
   "workbench.activityBar.location": "hidden",
   "explorer.confirmDelete": false,
-  "editor.fontSize": 14,
+  "editor.cursorBlinking": "solid",
   "editor.cursorStyle": "block",
   "editor.lineNumbers": "relative",
   "editor.minimap.enabled": false,

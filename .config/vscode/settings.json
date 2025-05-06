@@ -9,12 +9,10 @@
   "editor.tabSize": 2,
   "explorer.confirmDelete": false,
   "window.commandCenter": false,
-  "window.customTitleBarVisibility": "never",
   "window.zoomLevel": 1,
   "workbench.activityBar.location": "hidden",
   "workbench.colorTheme": "Tokyo Night",
   "workbench.editor.showTabs": "none",
-  "workbench.layoutControl.enabled": false,
   "workbench.sideBar.location": "right",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.fontFamily": "Jetbrains Mono NFM",
@@ -80,6 +78,15 @@
       "before": ["g", "f"],
       "commands": ["editor.action.goToFile"],
     },
+    // edit
+    {
+      "before": ["<leader>", "c", "r"],
+      "commands": ["editor.action.rename"],
+    },
+    {
+      "before": ["<leader>", "t", "t"],
+      "commands": ["editor.action.refactor"],
+    },
     // windows
     {
       "before": ["<leader>", "w", "e"],
@@ -120,5 +127,8 @@
   },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 }

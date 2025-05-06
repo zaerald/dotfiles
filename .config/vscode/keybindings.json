@@ -12,12 +12,12 @@
   },
   // text navigation
   {
-    "key": "] ]",
+    "key": "gn",
     "command": "editor.action.wordHighlight.next",
     "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && hasWordHighlights"
   },
   {
-    "key": "[ [",
+    "key": "gN",
     "command": "editor.action.wordHighlight.prev",
     "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && hasWordHighlights"
   },
@@ -65,6 +65,11 @@
     "key": "e",
     "command": "workbench.explorer.fileView.focus",
     "when": "!editorFocus && !inputFocus"
+  },
+  {
+    "key": "enter",
+    "command": "explorer.openAndPassFocus",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
   },
   {
     "key": "a",
@@ -135,5 +140,9 @@
     "key": "i",
     "command": "copyRelativeFilePath",
     "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+  },
+  {
+    "key": "cmd+i",
+    "command": "composerMode.agent"
   },
 ]

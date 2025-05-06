@@ -1,42 +1,23 @@
 {
-  "workbench.colorTheme": "Tokyo Night",
-  "workbench.sideBar.location": "right",
-  "workbench.editor.showTabs": "none",
-  "workbench.activityBar.location": "hidden",
-  "explorer.confirmDelete": false,
-  "editor.fontSize": 14,
+  "editor.cursorBlinking": "solid",
   "editor.cursorStyle": "block",
+  "editor.guides.bracketPairs": "active",
   "editor.lineNumbers": "relative",
   "editor.minimap.enabled": false,
-  "editor.showFoldingControls": "never",
-  "window.customTitleBarVisibility": "never",
-  "window.zoomLevel": 1,
-  "editor.tabSize": 2,
-  "window.commandCenter": false,
-  "workbench.layoutControl.enabled": false,
   "editor.renderWhitespace": "boundary",
+  "editor.showFoldingControls": "never",
+  "editor.tabSize": 2,
+  "explorer.confirmDelete": false,
+  "window.commandCenter": false,
+  "window.zoomLevel": 1,
+  "workbench.activityBar.location": "hidden",
+  "workbench.colorTheme": "Tokyo Night",
+  "workbench.editor.showTabs": "none",
+  "workbench.sideBar.location": "right",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.fontFamily": "Jetbrains Mono NFM",
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
   "vim.leader": "<space>",
   "vim.useSystemClipboard": true,
-  "vim.cursorStylePerMode.insert": "block",
-  "vim.cursorStylePerMode.normal": "block",
-  "vim.cursorStylePerMode.replace": "block",
-  "vim.cursorStylePerMode.visual": "block",
-  "vim.cursorStylePerMode.visualblock": "block",
-  "vim.cursorStylePerMode.visualline": "block",
   "vim.highlightedyank.enable": true,
   "vim.handleKeys": {
     "<C-d>": true,
@@ -53,12 +34,58 @@
       "commands": ["workbench.action.findInFiles"],
     },
     {
+      "before": ["<leader>", "s", "s"],
+      "commands": ["workbench.action.gotoSymbol"],
+    },
+    {
       "before": ["<leader>", "f", "f"],
       "commands": ["workbench.view.explorer"],
     },
     {
       "before": ["<leader>", "f", "e"],
       "commands": ["revealInExplorer"],
+    },
+    // text navigation
+    {
+      "before": ["g", "E"],
+      "commands": ["editor.action.marker.prevInFiles"],
+    },
+    {
+      "before": ["g", "e"],
+      "commands": ["editor.action.marker.nextInFiles"],
+    },
+    {
+      "before": ["g", "i"],
+      "commands": ["editor.action.goToImplementation"],
+    },
+    {
+      "before": ["g", "d"],
+      "commands": ["editor.action.revealDefinition"],
+    },
+    {
+      "before": ["g", "t"],
+      "commands": ["editor.action.goToTypeDefinition"],
+    },
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.goToReferences"],
+    },
+    {
+      "before": ["g", "s"],
+      "commands": ["editor.action.goToSymbol"],
+    },
+    {
+      "before": ["g", "f"],
+      "commands": ["editor.action.goToFile"],
+    },
+    // edit
+    {
+      "before": ["<leader>", "c", "r"],
+      "commands": ["editor.action.rename"],
+    },
+    {
+      "before": ["<leader>", "t", "t"],
+      "commands": ["editor.action.refactor"],
     },
     // windows
     {
@@ -73,6 +100,11 @@
       "before": ["<leader>", "w", "t"],
       "commands": ["workbench.action.terminal.toggleTerminal"],
     },
+    {
+      "before": ["<leader>", "w", "a"],
+      "commands": ["workbench.action.toggleAuxiliaryBar"],
+    },
+
   ],
   "vim.visualModeKeyBindings": [
     {
@@ -84,4 +116,19 @@
       "commands": ["editor.action.outdentLines"],
     },
   ],
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 }

@@ -23,55 +23,53 @@ vim.keymap.set("n", "<leader>ocf", ":s/[~>x ]\\]/>\\]/<CR>", { noremap = true, s
 vim.keymap.set("x", "<leader>ocf", ":s/[~>x ]\\]/>\\]/<CR>", { noremap = true, silent = true })
 
 return {
-  {
-    "obsidian-nvim/obsidian.nvim",
-    version = "*",
-    lazy = true,
-    ft = "markdown",
-    dependencies = {
-      "nvim-lua/plenary.nvim",
+  "obsidian-nvim/obsidian.nvim",
+  version = "*",
+  lazy = true,
+  ft = "markdown",
+  dependencies = {
+    "nvim-lua/plenary.nvim",
+  },
+  opts = {
+    daily_notes = {
+      folder = "daily",
+      date_format = "%Y/%m-%B/%Y-%m-%d",
+      template = nil,
     },
-    opts = {
-      daily_notes = {
-        folder = "daily",
-        date_format = "%Y/%m-%B/%Y-%m-%d",
-        template = nil,
+    mappings = {
+      ["gf"] = {
+        action = function()
+          return require("obsidian").util.gf_passthrough()
+        end,
+        opts = { noremap = false, expr = true, buffer = true },
       },
-      mappings = {
-        ["gf"] = {
-          action = function()
-            return require("obsidian").util.gf_passthrough()
-          end,
-          opts = { noremap = false, expr = true, buffer = true },
-        },
-        ["<cr>"] = {
-          action = function()
-            return require("obsidian").util.smart_action()
-          end,
-          opts = { buffer = true },
-        },
+      ["<cr>"] = {
+        action = function()
+          return require("obsidian").util.smart_action()
+        end,
+        opts = { buffer = true },
       },
-      workspaces = {
-        {
-          name = "no-vault",
-          path = function()
-            return assert(vim.fs.dirname(vim.api.nvim_buf_get_name(0)))
-          end,
-          overrides = {
-            notes_subdir = vim.NIL,
-            new_notes_location = "current_dir",
-            templates = {
-              subdir = vim.NIL,
-            },
+    },
+    workspaces = {
+      {
+        name = "no-vault",
+        path = function()
+          return assert(vim.fs.dirname(vim.api.nvim_buf_get_name(0)))
+        end,
+        overrides = {
+          notes_subdir = vim.NIL,
+          new_notes_location = "current_dir",
+          templates = {
+            subdir = vim.NIL,
           },
         },
       },
-      attachments = {
-        img_folder = "assets/images",
-      },
-      image_name_func = function()
-        return string.format("%s-", os.date("%Y%m%d%H%M%S"))
-      end,
     },
+    attachments = {
+      img_folder = "assets/images",
+    },
+    image_name_func = function()
+      return string.format("%s-", os.date("%Y%m%d%H%M%S"))
+    end,
   },
 }

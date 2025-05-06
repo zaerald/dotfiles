@@ -1,6 +1,4 @@
 return {
-  {
-    "AndrewRadev/linediff.vim",
-    -- lazy = true,
-  },
+  "AndrewRadev/linediff.vim",
+  -- lazy = true,
 }

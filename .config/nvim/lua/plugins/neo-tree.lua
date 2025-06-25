@@ -4,6 +4,22 @@ return {
     window = {
       position = "right",
       width = 60,
+      mappings = {
+        ["O"] = {
+          function(state)
+            local path = state.tree:get_node().path
+            vim.fn.jobstart({ "wsl-open", path }, {
+              detach = true,
+              on_exit = function(_, code)
+                if code ~= 0 then
+                  vim.notify("Failed to open: " .. path, vim.log.levels.ERROR)
+                end
+              end,
+            })
+          end,
+          desc = "Open with System Applicaiton",
+        },
+      },
     },
     event_handlers = {
       {

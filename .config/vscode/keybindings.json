@@ -11,16 +11,16 @@
     "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && (editorLangId == 'html' || editorLangId == 'javascriptreact' || editorLangId == 'typescriptreact')"
   },
   // text navigation
-  {
-    "key": "gn",
-    "command": "editor.action.wordHighlight.next",
-    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && hasWordHighlights"
-  },
-  {
-    "key": "gN",
-    "command": "editor.action.wordHighlight.prev",
-    "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && hasWordHighlights"
-  },
+  // {
+  //   "key": "g n",
+  //   "command": "editor.action.wordHighlight.next",
+  //   "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && hasWordHighlights"
+  // },
+  // {
+  //   "key": "g N",
+  //   "command": "editor.action.wordHighlight.prev",
+  //   "when": "editorTextFocus && vim.active && vim.mode != 'Insert' && hasWordHighlights"
+  // },
   // navigation
   {
     "key": "ctrl+h",
@@ -69,7 +69,7 @@
   {
     "key": "enter",
     "command": "explorer.openAndPassFocus",
-    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceIsFolder && !inputFocus"
   },
   {
     "key": "a",

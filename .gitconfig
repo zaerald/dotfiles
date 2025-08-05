@@ -3,11 +3,7 @@
 
 [core]
   editor = "$(which nvim)"
-  pager = delta
   autocrlf = input
-
-[interactive]
-  diffFilter = delta --color-only
 
 [alias]
   a = add
@@ -20,6 +16,7 @@
   dh = diff HEAD
   dino = diff --name-only
   co = checkout
+  cd = checkout origin/develop
   cb = checkout -b
   b = branch
   bb = "!f() { git branch "$(git branch --show-current)_$(date +%Y%m%d_%H%M%S)"; }; f"
@@ -27,7 +24,7 @@
   bn = branch --show-current
   bd = branch -d
   bD = branch -D
-  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  hist = log --pretty="format:\"%h %ad | %s%d [%an]\"" --graph --date=short
   l = log --pretty=oneline -n 20 --graph --abbrev-commit
   lo = log --oneline
   lof = log --oneline --follow
@@ -44,10 +41,13 @@
   pl = pull
   f = fetch
   fa = fetch --all
+  rh = reset --hard
   rhh = reset --hard HEAD
+  rht = "!f() { git reset --hard "$(git rev-parse --abbrev-ref --symbolic-full-name @{u})";}; f"
   rb = rebase
   rbi = rebase --interactive
   rbo = rebase --onto
+  rbod = rebase --onto origin/develop
   t = tag
   ts = tag -l
   wt = worktree

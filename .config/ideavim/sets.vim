@@ -14,6 +14,7 @@ set incsearch
 set smartcase
 set showmatch
 set ignorecase
+set nowrapscan
 
 " -- text rendering options --
 set display+=lastline

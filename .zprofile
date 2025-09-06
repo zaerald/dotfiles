@@ -32,7 +32,6 @@ if which pack > /dev/null 2>&1; then
   . $(pack completion --shell zsh)
 fi
 
-
 # docker
 if which docker > /dev/null 2>&1; then
   fpath=(/Users/zaerald/.docker/completions $fpath)

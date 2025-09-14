@@ -16,6 +16,9 @@ fi
 # fzf
 if which fzf > /dev/null 2>&1; then
   source <(fzf --zsh)
+  show_file_or_dir_preview="if [ -d {} ]; then eza --tree --color=always {} | head -200; else bat -n --color=always --line-range :500 {}; fi"
+  export FZF_CTRL_T_OPTS="--preview '$show_file_or_dir_preview'"
+  export FZF_ALT_C_OPTS="--preview 'eza --tree --color=always {} | head -200'"
 fi
 
 # tmuxifier
@@ -37,5 +40,17 @@ if which docker > /dev/null 2>&1; then
   fpath=(/Users/zaerald/.docker/completions $fpath)
   autoload -Uz compinit
   compinit
+fi
+
+# make neovim the default editor
+if which nvim > /dev/null 2>&1; then
+  export EDITOR='nvim';
+  export VISUAL='nvim';
+fi
+
+# jenv
+if which jenv > /dev/null 2>&1; then
+  export JAVA_HOME="$(jenv prefix)"
+  eval "$(jenv init -)"
 fi
 

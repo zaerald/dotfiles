@@ -4,6 +4,7 @@
 [core]
   editor = "$(which nvim)"
   autocrlf = input
+	excludesFile = ~/.gitignore
 
 [alias]
   a = add

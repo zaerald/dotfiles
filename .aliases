@@ -9,6 +9,10 @@ alias week='date +%V'
 # Reload the shell (i.e. invoke as a login shell)
 alias rl="exec \"\${SHELL}\" -l"
 
+alias l="ls -lAhF --color=auto"
+alias ls="ls --color=auto"
+alias ll="ls -lhf --color=auto"
+
 # xclip
 if which xclip >/dev/null 2>&1; then
   alias c="xclip -selection clipboard"
@@ -58,7 +62,8 @@ alias vim=nvim
 
 # programs
 alias g=git
-alias lg=lazygit
+alias lzg=lazygit
+alias lzd=lazydocker
 alias k=kubectl
 alias rr='ranger --choosedir=$HOME/.rangerdir; RANGER_LAST_DIR=`cat $HOME/.rangerdir`; cd "$RANGER_LAST_DIR"'
 alias dk=docker

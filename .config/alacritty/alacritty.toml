@@ -31,3 +31,6 @@ import = [
   "~/.config/alacritty/catppuccin-macchiato.toml"
 ]
 
+[keyboard]
+bindings = [ { key = "Return", mods = "Shift", chars = "\n" } ]
+

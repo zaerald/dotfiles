@@ -26,7 +26,13 @@ return {
   "obsidian-nvim/obsidian.nvim",
   version = "*",
   lazy = true,
-  ft = "markdown",
+  event = {
+    "BufReadPre *.md",
+    "BufNewFile *.md",
+  },
+  cond = function()
+    return vim.fn.isdirectory(".obsidian") == 1
+  end,
   dependencies = {
     "nvim-lua/plenary.nvim",
   },

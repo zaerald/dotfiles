@@ -1,7 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 editor=${EDITOR:=nvim}
-file=`mktemp`.sh
+file=tempfile
 tmux capture-pane -pS - > $file
 tmux new-window -n:scratch "$editor '+ normal G $' $file"
 
